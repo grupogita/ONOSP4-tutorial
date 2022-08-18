@@ -1,0 +1,166 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 33557865
+    name: "IngressPipeImpl.acl_table"
+    alias: "acl_table"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.ingress_port"
+    bitwidth: 9
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ethernet.dst_addr"
+    bitwidth: 48
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 3
+    name: "hdr.ethernet.src_addr"
+    bitwidth: 48
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 4
+    name: "hdr.ethernet.ether_type"
+    bitwidth: 16
+    match_type: TERNARY
+  }
+  action_refs {
+    id: 16833331
+  }
+  action_refs {
+    id: 16782152
+  }
+  action_refs {
+    id: 16796182
+  }
+  action_refs {
+    id: 16800567
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  direct_resource_ids: 318773822
+  size: 1024
+}
+tables {
+  preamble {
+    id: 33605373
+    name: "IngressPipeImpl.l2_exact_table"
+    alias: "l2_exact_table"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ethernet.dst_addr"
+    bitwidth: 48
+    match_type: EXACT
+  }
+  action_refs {
+    id: 16812802
+  }
+  action_refs {
+    id: 16796182
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  action_refs {
+    id: 16800567
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 16800567
+    name: "NoAction"
+    alias: "NoAction"
+  }
+}
+actions {
+  preamble {
+    id: 16796182
+    name: "IngressPipeImpl.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16833331
+    name: "IngressPipeImpl.send_to_cpu"
+    alias: "send_to_cpu"
+  }
+}
+actions {
+  preamble {
+    id: 16782152
+    name: "IngressPipeImpl.clone_to_cpu"
+    alias: "clone_to_cpu"
+  }
+}
+actions {
+  preamble {
+    id: 16812802
+    name: "IngressPipeImpl.set_egress_port"
+    alias: "set_egress_port"
+  }
+  params {
+    id: 1
+    name: "port_num"
+    bitwidth: 9
+  }
+}
+direct_counters {
+  preamble {
+    id: 318773822
+    name: "acl_table_counter"
+    alias: "acl_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 33557865
+}
+controller_packet_metadata {
+  preamble {
+    id: 67132047
+    name: "packet_in"
+    alias: "packet_in"
+    annotations: "@controller_header(\"packet_in\")"
+  }
+  metadata {
+    id: 1
+    name: "ingress_port"
+    bitwidth: 9
+  }
+  metadata {
+    id: 2
+    name: "_pad"
+    bitwidth: 7
+  }
+}
+controller_packet_metadata {
+  preamble {
+    id: 67111875
+    name: "packet_out"
+    alias: "packet_out"
+    annotations: "@controller_header(\"packet_out\")"
+  }
+  metadata {
+    id: 1
+    name: "egress_port"
+    bitwidth: 9
+  }
+  metadata {
+    id: 2
+    name: "_pad"
+    bitwidth: 7
+  }
+}
+type_info {
+}

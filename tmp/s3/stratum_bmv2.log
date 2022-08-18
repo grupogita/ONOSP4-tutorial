@@ -1,0 +1,18 @@
+stratum_bmv2 -device_id=1 -chassis_config_file=/tmp/s3/chassis-config.txt -forwarding_pipeline_configs_file=/tmp/s3/pipe.txt -persistent_config_dir=/tmp/s3 -initial_pipeline=/root/dummy.json -cpu_port=255 -external_stratum_urls=0.0.0.0:50003 -local_stratum_url=localhost:55963 -max_num_controllers_per_node=10 -write_req_log_file=/tmp/s3/write-reqs.txt -logtosyslog=false -logtostderr=true -bmv2_log_level=warn
+
+--------------------------------------------------------------------------------
+
+E0801 21:13:02.580543    79 main.cc:121] Starting bmv2 simple_switch and waiting for P4 pipeline
+W0801 21:13:02.663914    79 credentials_manager.cc:45] Using insecure server credentials
+I0801 21:13:02.693428    79 timer_daemon.cc:90] The timer daemon has been started.
+I0801 21:13:02.700217    79 hal.cc:128] Setting up HAL in COLDBOOT mode...
+I0801 21:13:02.719607    79 config_monitoring_service.cc:90] Pushing the saved chassis config read from /tmp/s3/chassis-config.txt...
+I0801 21:13:02.743989    79 bmv2_chassis_manager.cc:476] Registered port status callbacks successfully for node 1.
+I0801 21:13:02.744017    79 bmv2_chassis_manager.cc:61] Adding port 1 to node 1
+I0801 21:13:02.757516    79 p4_service.cc:119] Pushing the saved forwarding pipeline configs read from /tmp/s3/pipe.txt...
+E0801 21:13:02.757546    79 utils.cc:109] StratumErrorSpace::ERR_FILE_NOT_FOUND: /tmp/s3/pipe.txt not found.
+E0801 21:13:02.757721    79 utils.cc:65] Return Error: ReadFileToString(filename, &text) failed with StratumErrorSpace::ERR_FILE_NOT_FOUND: /tmp/s3/pipe.txt not found.
+W0801 21:13:02.757727    79 p4_service.cc:128] No saved forwarding pipeline config found at /tmp/s3/pipe.txt. This is normal when the switch is just installed and no master controller is connected yet.
+E0801 21:13:02.810286838      79 server_chttp2.cc:40]        {"created":"@1659388382.810267044","description":"Only 1 addresses added out of total 2 resolved","file":"external/com_github_grpc_grpc/src/core/ext/transport/chttp2/server/chttp2_server.cc","file_line":406,"referenced_errors":[{"created":"@1659388382.810265144","description":"Address family not supported by protocol","errno":97,"file":"external/com_github_grpc_grpc/src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":420,"os_error":"Address family not supported by protocol","syscall":"socket","target_address":"[::1]:55963"}]}
+E0801 21:13:02.810375    79 hal.cc:223] Stratum external facing services are listening to 0.0.0.0:50003, localhost:55963...
+I0801 21:13:02.865805   128 bmv2_chassis_manager.cc:409] State of port 1 in node 1: UP.

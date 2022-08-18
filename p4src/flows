@@ -1,0 +1,39 @@
+{  
+   "priority": 40001,  
+   "timeout": 0,  
+   "isPermanent": true,  
+   "deviceId": "device:s1",
+   "tableId": "IngressPipeImpl.//TO DO -  TABLE NAME//",
+   "appId": "0",  
+   "treatment": {  
+     "instructions": [  
+       {  
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "IngressPipeImpl.//TO DO -  ACTION NAME//",
+         "actionParams": {"port_num": "0000000000000002"}
+       }  
+     ]  
+   },  
+   "selector": {  
+     "criteria": [   
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [ 
+                {
+                    "field": "hdr.ethernet.dst_addr",
+                    "match": "exact",
+                    "value": "000000000002"
+                }
+            ]
+        }
+     ]  
+   }  
+ }
+ 
+ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++ ////////////////// ++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//TO DO -  APPLY THE SAME FLOW'S STRUCTURE FOR THE PORT-1//

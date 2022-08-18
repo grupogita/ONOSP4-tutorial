@@ -1,0 +1,8529 @@
+*** 2022-07-13 13:20:24.708 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=346]
+Metadata()
+
+*** 2022-07-13 13:20:24.749 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=346]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:20:24.752 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=346]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:20:24.753 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=346]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:25.445 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\307c\376$\244#\005\005\227\316\0242\342\236\3657_\217\366\245vgX\213\005\'\324\207\344gx\263\vs\304\267\'\035(b\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:25.447 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\307e\376$\244#\005\005\360\276\342\327#\230t\\3\231\256Y\327\b\303\207:\266\323\363\325 \310H\340\006\375\356l\341\"B\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:25.462 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\267\307k\376$\244#\005\005\361\220N\\\207\260\fdpcJ1\367\323\233\351\374;,7\341\227\237\242\004\316\213xw\230\334K\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:25.499 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\267\307\227\376$\244#\005\005\277\001i\224\343\225r\220R\031\314t?b~\023\262\026\036\306\323\256\275\006\000\316*\307J\253x\267\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:26.570 - p4.v1.P4Runtime/Read STARTED [callId=347]
+Metadata()
+
+*** 2022-07-13 13:20:26.571 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=347]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:26.572 - p4.v1.P4Runtime/Read << INBOUND << [callId=347]
+
+*** 2022-07-13 13:20:26.572 - p4.v1.P4Runtime/Read CLOSED [callId=347]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:26.590 - p4.v1.P4Runtime/Read STARTED [callId=348]
+Metadata()
+
+*** 2022-07-13 13:20:26.591 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=348]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:26.592 - p4.v1.P4Runtime/Read << INBOUND << [callId=348]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 30750
+      packet_count: 250
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:26.592 - p4.v1.P4Runtime/Read CLOSED [callId=348]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:28.521 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\323g\376$\244#\005\005+\202F_16\303\003\231y\352X)Et\355\303\021\302n\337\270\202I\v&\350\200\3256\032\240\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:28.526 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\323m\376$\244#\005\005\3659\177\327\256\216\374\3753\024;\025\260\\?\354\031\342N^O\353>k\223`UL\325\244\375\202\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:28.537 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\267\323v\376$\244#\005\005M\020>\247\bC\310?\247\240\354!\344t\033\345\362a\355T\027|\204\001\005\373\234\207 \232\255\260\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:28.596 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\267\323\262\376$\244#\005\005\326\210\324K\354y`\035?\266\312\253nf\247\200\340\026\210\355\336KE\253\301(l7\311[Y^\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:29.540 - p4.v1.P4Runtime/Read STARTED [callId=349]
+Metadata()
+
+*** 2022-07-13 13:20:29.541 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=349]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:29.543 - p4.v1.P4Runtime/Read << INBOUND << [callId=349]
+
+*** 2022-07-13 13:20:29.543 - p4.v1.P4Runtime/Read CLOSED [callId=349]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:30.530 - p4.v1.P4Runtime/Read STARTED [callId=350]
+Metadata()
+
+*** 2022-07-13 13:20:30.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=350]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:30.538 - p4.v1.P4Runtime/Read << INBOUND << [callId=350]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 30996
+      packet_count: 252
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:30.538 - p4.v1.P4Runtime/Read CLOSED [callId=350]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:31.25 - gnmi.gNMI/Get STARTED [callId=351]
+Metadata()
+
+*** 2022-07-13 13:20:31.25 - gnmi.gNMI/Get >> OUTBOUND >> [callId=351]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:20:31.29 - gnmi.gNMI/Get << INBOUND << [callId=351]
+notification {
+  timestamp: 1657718431026583432
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:20:31.29 - gnmi.gNMI/Get CLOSED [callId=351]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:31.614 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\337|\376$\244#\005\005*\216.~M\216\031\222\337\342\250D|F\341\242\244+:\fv\242\002\270nf\r~\341\205\000\311\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:31.618 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\337\201\376$\244#\005\005\321nj\bb\317\202\330\235\351\207Y\362\265\021\201\316\226\227O*\317\213\220\235 R\033\323\216\312\306\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:31.628 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\267\337\211\376$\244#\005\005\276C\304:\205y\274\370n\213i$\2469S\021\017\250\020\322\023\370\020\354\210\306\353\253\231; r\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:31.696 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\267\337\316\376$\244#\005\005\000\343\356z\252\243\211\\\335p\347<(|\360\230\033\366\027t\032\327\217\252S>\360\357\273t\3040\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:32.544 - p4.v1.P4Runtime/Read STARTED [callId=352]
+Metadata()
+
+*** 2022-07-13 13:20:32.545 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=352]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:32.546 - p4.v1.P4Runtime/Read << INBOUND << [callId=352]
+
+*** 2022-07-13 13:20:32.546 - p4.v1.P4Runtime/Read CLOSED [callId=352]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:33.23 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=353]
+Metadata()
+
+*** 2022-07-13 13:20:33.23 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=353]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:20:33.34 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=353]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:20:33.34 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=353]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:34.527 - p4.v1.P4Runtime/Read STARTED [callId=354]
+Metadata()
+
+*** 2022-07-13 13:20:34.530 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=354]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:34.531 - p4.v1.P4Runtime/Read << INBOUND << [callId=354]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 31242
+      packet_count: 254
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:34.532 - p4.v1.P4Runtime/Read CLOSED [callId=354]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:34.719 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\353\235\376$\244#\005\005\0212\240}\v\325\275b\210Q\217$!\202\302\320\224\333\375|i\000\226\177\376\031\366\347\212\000\022k\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:34.734 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\353\255\376$\244#\005\005\262|\332\231\005\t\006\'8k\353G\266\241\177^\272\237\347\377`\203\316\266e\212\250+\036\312&\203\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:34.742 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\267\353\264\376$\244#\005\005|-cc\324.]Kw\243\302+\355 \201\a\b\r\022\231\027zT\326\321\274\035]\307\300\223k\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:34.797 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\267\353\352\376$\244#\005\005B\241\354\254\250&H\217C\332\220\v`\t\325@\b*\277\370S\304\024d6\303m\353\034\264\234\022\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:35.552 - p4.v1.P4Runtime/Read STARTED [callId=355]
+Metadata()
+
+*** 2022-07-13 13:20:35.552 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=355]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:35.553 - p4.v1.P4Runtime/Read << INBOUND << [callId=355]
+
+*** 2022-07-13 13:20:35.553 - p4.v1.P4Runtime/Read CLOSED [callId=355]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:37.821 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\367\273\376$\244#\005\005\236\304\t\024<\211\220\226\201\253\225z\035\274\3436\352\211\203XUqd\001\344S\220\016u\b\203v\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:37.825 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\267\367\300\376$\244#\005\005\344!\317\244\230l22%/\221\a\021U.\372\375\227k\357\016w\317\277\v\3521/\314\261v\237\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:37.836 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\267\367\311\376$\244#\005\005\004\034\223\242X6:\347\372\200>K\341\362f\t\356\351c\212\311\227n\242B\035\370A\233c\300Q\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:37.898 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\267\370\006\376$\244#\005\005\205\v\274\376\204\277\352\036\242S\'\022\374\353\324\3507aA\347\240\257\316`F\363.\324\221P\215\003\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:38.533 - p4.v1.P4Runtime/Read STARTED [callId=356]
+Metadata()
+
+*** 2022-07-13 13:20:38.533 - p4.v1.P4Runtime/Read STARTED [callId=357]
+Metadata()
+
+*** 2022-07-13 13:20:38.534 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=356]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:38.535 - p4.v1.P4Runtime/Read << INBOUND << [callId=356]
+
+*** 2022-07-13 13:20:38.535 - p4.v1.P4Runtime/Read CLOSED [callId=356]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:38.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=357]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:38.537 - p4.v1.P4Runtime/Read << INBOUND << [callId=357]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 31734
+      packet_count: 258
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:38.537 - p4.v1.P4Runtime/Read CLOSED [callId=357]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:39.685 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=358]
+Metadata()
+
+*** 2022-07-13 13:20:39.692 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=358]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:20:39.696 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=358]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:20:39.696 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=358]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:40.919 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\003\320\376$\244#\005\005yM\022K.\301(A\262\340\232\331\2623\206\033\264IS\255N&\360\215T\302\n\241\260\310\370\f\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:40.923 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\003\327\376$\244#\005\005\357S\333\001u\354/+\243-\333\f\234\245\235\324\375\205\'\330\244\362\301S;\003J\363T\206\243\n\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:40.931 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\003\341\376$\244#\005\005\035\375\3615:\374\025J9\260\v\206=\005\333!i\257\2668\373\200\327\251\\E\2333\227\242\255\250\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:40.995 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\004\037\376$\244#\005\005\023\333\341\b\030\3728o4\307\242W,\363\220{\363V\225z\271\003\335)J\313\375\361\367g\177<\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:41.25 - gnmi.gNMI/Get STARTED [callId=359]
+Metadata()
+
+*** 2022-07-13 13:20:41.25 - gnmi.gNMI/Get >> OUTBOUND >> [callId=359]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:20:41.28 - gnmi.gNMI/Get << INBOUND << [callId=359]
+notification {
+  timestamp: 1657718441026456930
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:20:41.28 - gnmi.gNMI/Get CLOSED [callId=359]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:41.516 - p4.v1.P4Runtime/Read STARTED [callId=360]
+Metadata()
+
+*** 2022-07-13 13:20:41.518 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=360]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:41.519 - p4.v1.P4Runtime/Read << INBOUND << [callId=360]
+
+*** 2022-07-13 13:20:41.519 - p4.v1.P4Runtime/Read CLOSED [callId=360]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:42.529 - p4.v1.P4Runtime/Read STARTED [callId=361]
+Metadata()
+
+*** 2022-07-13 13:20:42.530 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=361]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:42.533 - p4.v1.P4Runtime/Read << INBOUND << [callId=361]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 31980
+      packet_count: 260
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:42.533 - p4.v1.P4Runtime/Read CLOSED [callId=361]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:43.22 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=362]
+Metadata()
+
+*** 2022-07-13 13:20:43.23 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=362]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:20:43.25 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=362]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:20:43.25 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=362]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:44.18 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\017\357\376$\244#\005\005 \033\006\036\215\257s\214_M\vjsdcB\326\244\315\203\022s\364^b\327\322\266\323\303ET\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:44.39 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\017\366\376$\244#\005\005tn\200`\236Y\256j\345\366_\347u\374\203+g\227!Pg5\272Y\347\231\265s\377\242,\002\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:44.47 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\020\r\376$\244#\005\005@;\036\367\245b\2412Z\212\223\363\376p\221\317\230\037\177ac\252\031T\354\265\366J\311\354y\003\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:44.111 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\020K\376$\244#\005\005\211\r\370Y\006\311z\300K\224,\372O\252s\t\032i\342\236\3579\260\002\017\222\005\252\253\310\205\256\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:44.523 - p4.v1.P4Runtime/Read STARTED [callId=363]
+Metadata()
+
+*** 2022-07-13 13:20:44.523 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=363]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:44.524 - p4.v1.P4Runtime/Read << INBOUND << [callId=363]
+
+*** 2022-07-13 13:20:44.524 - p4.v1.P4Runtime/Read CLOSED [callId=363]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:46.525 - p4.v1.P4Runtime/Read STARTED [callId=364]
+Metadata()
+
+*** 2022-07-13 13:20:46.526 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=364]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:46.528 - p4.v1.P4Runtime/Read << INBOUND << [callId=364]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 32226
+      packet_count: 262
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:46.528 - p4.v1.P4Runtime/Read CLOSED [callId=364]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:47.115 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\034\t\376$\244#\005\005CA?E\331\nI\255@>\212\340\355\006\300\335%\275\234\233\261\371\346\310\337\002\211%&9q\313\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:47.120 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\034\017\376$\244#\005\005g\371jy\217\030ky\206n\217\211\217._*\332gm\276\346\360k\375u&\265\345\"\354d\022\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:47.129 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\034\027\376$\244#\005\005UVKp9\'\377\005\022\250\326s\264S\327A2\030\257\265\212s\377)\224d\004\210I\200P\016\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:47.202 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\034^\376$\244#\005\005\035u\006RQ\365;\254\334\000\253\226\362 (N:\344[\223\276\364\023\254\tY\n\035\325\2373\372\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:47.544 - p4.v1.P4Runtime/Read STARTED [callId=365]
+Metadata()
+
+*** 2022-07-13 13:20:47.544 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=365]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:47.545 - p4.v1.P4Runtime/Read << INBOUND << [callId=365]
+
+*** 2022-07-13 13:20:47.545 - p4.v1.P4Runtime/Read CLOSED [callId=365]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:58.522 - p4.v1.P4Runtime/Read STARTED [callId=374]
+Metadata()
+
+*** 2022-07-13 13:20:58.523 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=374]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:58.529 - p4.v1.P4Runtime/Read << INBOUND << [callId=374]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 33210
+      packet_count: 270
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:20:58.529 - p4.v1.P4Runtime/Read CLOSED [callId=374]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:59.493 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270Ld\376$\244#\005\005\216\323\373\256\032\243\260\243QA\307\2303\335\350\313\250\362\025\233@@\367I\263K[\003R\237\306g\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:20:59.494 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270Le\376$\244#\005\005\023%\027w \271\267\024\224\313U\300\227\303r\204\205\207\316\035%\021\204\306\350)>\020\357g&\016\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:20:59.501 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270Li\376$\244#\005\005i\352\366\243\355\225\363#\343\240RMUt\023\v\037g\231\005d\300\036\017#\343\352\303\221\356j\257\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:20:59.514 - p4.v1.P4Runtime/Read STARTED [callId=375]
+Metadata()
+
+*** 2022-07-13 13:20:59.514 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=375]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:20:59.515 - p4.v1.P4Runtime/Read << INBOUND << [callId=375]
+
+*** 2022-07-13 13:20:59.515 - p4.v1.P4Runtime/Read CLOSED [callId=375]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:20:59.599 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270L\310\376$\244#\005\005\0060\250b\223\233\213#\222\002\346\311\307\334H\374\006\360\333\377fk\177\3635\016x56\365\000\275\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:01.25 - gnmi.gNMI/Get STARTED [callId=376]
+Metadata()
+
+*** 2022-07-13 13:21:01.26 - gnmi.gNMI/Get >> OUTBOUND >> [callId=376]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:01.28 - gnmi.gNMI/Get << INBOUND << [callId=376]
+notification {
+  timestamp: 1657718461026646764
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:01.28 - gnmi.gNMI/Get CLOSED [callId=376]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:02.533 - p4.v1.P4Runtime/Read STARTED [callId=377]
+Metadata()
+
+*** 2022-07-13 13:21:02.533 - p4.v1.P4Runtime/Read STARTED [callId=378]
+Metadata()
+
+*** 2022-07-13 13:21:02.534 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=378]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:02.535 - p4.v1.P4Runtime/Read << INBOUND << [callId=378]
+
+*** 2022-07-13 13:21:02.535 - p4.v1.P4Runtime/Read CLOSED [callId=378]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:02.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=377]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:02.536 - p4.v1.P4Runtime/Read << INBOUND << [callId=377]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 33456
+      packet_count: 272
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:02.537 - p4.v1.P4Runtime/Read CLOSED [callId=377]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:02.597 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270X\203\376$\244#\005\005\377/a\356K0*2n\346\312\201\256r\313h\340 n\003b\301Av\232\276\262O\203tS\264\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:02.599 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270X\206\376$\244#\005\005\311\030qF\nw\001\336\352\'J\316\224\005\273%2ClK\330\303\211e\332#\236]\303_\222>\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:02.606 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270X\213\376$\244#\005\005\326)\0252\027\023\233\n6%\'\177\034\177\260<\345\\\340<@\270l\210\027\242A\211\016\267yT\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:02.718 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270X\364\376$\244#\005\005o\215\225%p<t\323s\002\376\017\317\005\260i\n\304j\374\331\3025G\203\232\210\220Q\275\255\277\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:03.31 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=379]
+Metadata()
+
+*** 2022-07-13 13:21:03.32 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=379]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:03.35 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=379]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:03.36 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=379]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:05.538 - p4.v1.P4Runtime/Read STARTED [callId=380]
+Metadata()
+
+*** 2022-07-13 13:21:05.539 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=380]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:05.540 - p4.v1.P4Runtime/Read << INBOUND << [callId=380]
+
+*** 2022-07-13 13:21:05.540 - p4.v1.P4Runtime/Read CLOSED [callId=380]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:05.716 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270d\262\376$\244#\005\005\006\317\210mZ\177C~k\246\327v\203\t\215\205\363?\237\3332Yr\226\216\221\225\245\276BZ\314\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:05.725 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270d\273\376$\244#\005\005[X\250\376\334o|\351\004\330s\231\\\314\377\255\215\331\330\274\n\342\016\a\237a\242\\\017\326\204\201\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:05.734 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270d\303\376$\244#\005\005M\3157\214\237(9\332\350\355\253\231\314!/E\203\205\250;^/\"w\201bTA\262\254\202\331\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:05.797 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270e\002\376$\244#\005\005\024z\25609\264B\213\317\312\363\230\240\234\305$\312\234c\023s\b\207\004g\360\207\212\342\311_\334\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:06.511 - p4.v1.P4Runtime/Read STARTED [callId=381]
+Metadata()
+
+*** 2022-07-13 13:21:06.512 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=381]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:06.514 - p4.v1.P4Runtime/Read << INBOUND << [callId=381]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 33948
+      packet_count: 276
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:06.515 - p4.v1.P4Runtime/Read CLOSED [callId=381]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:08.539 - p4.v1.P4Runtime/Read STARTED [callId=382]
+Metadata()
+
+*** 2022-07-13 13:21:08.539 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=382]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:08.541 - p4.v1.P4Runtime/Read << INBOUND << [callId=382]
+
+*** 2022-07-13 13:21:08.541 - p4.v1.P4Runtime/Read CLOSED [callId=382]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:08.812 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270p\310\376$\244#\005\005\2149\261\n\244\t\374clt\237<\034\214\206\210\275%=,\304[2\301}V\371\nq3\246h\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:08.818 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270p\321\376$\244#\005\005\320s~+\035u8\230\267L\323\031\000\027\217#\375\021\335\030u\232\334ma\305\v\027\343\344\227\t\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:08.831 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270p\332\376$\244#\005\005j\254\034\032\372\256@\341\351\\\325N\3445D\334\235\356\345E\221\220\356i\266\302\376\347\223$\b\237\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:08.896 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270q\036\376$\244#\005\005\216\263\233$\257\315\327S\361\203\254P\v\024|\251*]M\261uNs7\2004\241\210Jj\016\336\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:09.686 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=383]
+Metadata()
+
+*** 2022-07-13 13:21:09.689 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=383]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:09.699 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=383]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:09.699 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=383]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:10.519 - p4.v1.P4Runtime/Read STARTED [callId=384]
+Metadata()
+
+*** 2022-07-13 13:21:10.519 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=384]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:10.528 - p4.v1.P4Runtime/Read << INBOUND << [callId=384]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 34194
+      packet_count: 278
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:10.528 - p4.v1.P4Runtime/Read CLOSED [callId=384]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:11.25 - gnmi.gNMI/Get STARTED [callId=385]
+Metadata()
+
+*** 2022-07-13 13:21:11.26 - gnmi.gNMI/Get >> OUTBOUND >> [callId=385]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:11.30 - gnmi.gNMI/Get << INBOUND << [callId=385]
+notification {
+  timestamp: 1657718471027076808
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:11.30 - gnmi.gNMI/Get CLOSED [callId=385]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:11.541 - p4.v1.P4Runtime/Read STARTED [callId=386]
+Metadata()
+
+*** 2022-07-13 13:21:11.541 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=386]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:11.542 - p4.v1.P4Runtime/Read << INBOUND << [callId=386]
+
+*** 2022-07-13 13:21:11.542 - p4.v1.P4Runtime/Read CLOSED [callId=386]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:11.899 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270|\332\376$\244#\005\005\033\353\277\036n\2024\364 \027;\021\360zSu\373J\345\340!\025&\207\354\232\352W\316I\220V\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:11.902 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270|\335\376$\244#\005\0056$;}\353\\\000G\276+\020-\304Bq\266\005\333\232,\022A\313}\343\307\323j\264\276\003\270\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:11.909 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270|\344\376$\244#\005\005\n\373\336\220\025\273x\330S\255\233\202\225f\\\225rX\3371\250\265\030\260\256Q\306$\330\210@\300\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:12.0 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270}<\376$\244#\005\005\301,\343X\210\266\033\326\242Y\273g$\350\330jr\005\017\213\355\216I-\034\302\254\v\236\026\3456\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:13.21 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=387]
+Metadata()
+
+*** 2022-07-13 13:21:13.21 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=387]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:13.28 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=387]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:13.29 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=387]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:14.520 - p4.v1.P4Runtime/Read STARTED [callId=388]
+Metadata()
+
+*** 2022-07-13 13:21:14.520 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=388]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:14.523 - p4.v1.P4Runtime/Read << INBOUND << [callId=388]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 34440
+      packet_count: 280
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:14.523 - p4.v1.P4Runtime/Read CLOSED [callId=388]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:14.534 - p4.v1.P4Runtime/Read STARTED [callId=389]
+Metadata()
+
+*** 2022-07-13 13:21:14.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=389]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:14.536 - p4.v1.P4Runtime/Read << INBOUND << [callId=389]
+
+*** 2022-07-13 13:21:14.536 - p4.v1.P4Runtime/Read CLOSED [callId=389]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:15.5 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\210\370\376$\244#\005\005\355QnV\241\227\265]Y<\214\233S\315\323\323S\356\337j/\036\340b=\333\276|\326u}t\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:15.19 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\211\n\376$\244#\005\005\276\030\260\301\347\21561\370+\354)!\272f\003\227j\317\201\371\253i\001F\375\231\201k\264\252,\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:15.30 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\211\024\376$\244#\005\005\302\233\333h\037\320d}\310\350\236\263R\302\242\256\245\334\324f\306\356y\226H`F\335l\200y\r\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:15.98 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\211W\376$\244#\005\005%O\021\370\333\305y\a\267b\243\360\"\361I9\266\372\272\354\274\333&1\242\354$\362\271\251\027\r\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:17.544 - p4.v1.P4Runtime/Read STARTED [callId=390]
+Metadata()
+
+*** 2022-07-13 13:21:17.544 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=390]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:17.545 - p4.v1.P4Runtime/Read << INBOUND << [callId=390]
+
+*** 2022-07-13 13:21:17.546 - p4.v1.P4Runtime/Read CLOSED [callId=390]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:18.118 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\225%\376$\244#\005\005\265\025\331\ae\312c\301\357\022\224r\031\254\021-N\353\221\257\227\216S\365\037\260i\004\221\353\263\r\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:18.123 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\225)\376$\244#\005\005\364\241\034\327\243\347\275\017\000j\305\276_C%U\2148HC\303\r\354\207}\025\354F\371\365\207j\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:18.131 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\2251\376$\244#\005\005T\257:\260^\270\202\222\316\203\345cd;\022|G\235a\222\r^O(K\214|\320\a\323T\345\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:18.195 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\225o\376$\244#\005\005\244\3608\272\240p\335<\224\341\333V\t\002\366_#\311Q\267]\370\374[\033Jr\332\b2\204y\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:18.512 - p4.v1.P4Runtime/Read STARTED [callId=391]
+Metadata()
+
+*** 2022-07-13 13:21:18.512 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=391]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:18.514 - p4.v1.P4Runtime/Read << INBOUND << [callId=391]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 34932
+      packet_count: 284
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:18.514 - p4.v1.P4Runtime/Read CLOSED [callId=391]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:20.537 - p4.v1.P4Runtime/Read STARTED [callId=392]
+Metadata()
+
+*** 2022-07-13 13:21:20.538 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=392]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:20.539 - p4.v1.P4Runtime/Read << INBOUND << [callId=392]
+
+*** 2022-07-13 13:21:20.539 - p4.v1.P4Runtime/Read CLOSED [callId=392]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:21.25 - gnmi.gNMI/Get STARTED [callId=393]
+Metadata()
+
+*** 2022-07-13 13:21:21.26 - gnmi.gNMI/Get >> OUTBOUND >> [callId=393]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:21.31 - gnmi.gNMI/Get << INBOUND << [callId=393]
+notification {
+  timestamp: 1657718481027229232
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:21.31 - gnmi.gNMI/Get CLOSED [callId=393]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:21.205 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\2410\376$\244#\005\005#\263e9{\323\233h\312kA\247*\240A\251\2010\304\320\026-\266\034;\261\330y\352!U\346\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:21.219 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\241B\376$\244#\005\005X\331\317\371|\247\242\367\334\324:bJ\031\221\200\313K\333\323\025\314l\370v\220\\K\322vI\207\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:21.230 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\241L\376$\244#\005\005Y.:\362\337}\336D\352\374\326l.s\363\201_\022\225o\305d\276\\\t\3056\0345\274\302b\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:21.299 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\241\220\376$\244#\005\005i\261+8e\314\274\214\216\353\341&\212p}\270\322\216z\206\303G\033\r\0029r\353\260\2061-\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:22.499 - p4.v1.P4Runtime/Read STARTED [callId=394]
+Metadata()
+
+*** 2022-07-13 13:21:22.500 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=394]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:22.501 - p4.v1.P4Runtime/Read << INBOUND << [callId=394]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 35178
+      packet_count: 286
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:22.501 - p4.v1.P4Runtime/Read CLOSED [callId=394]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:23.31 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=395]
+Metadata()
+
+*** 2022-07-13 13:21:23.31 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=395]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:23.33 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=395]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:23.33 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=395]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:23.538 - p4.v1.P4Runtime/Read STARTED [callId=396]
+Metadata()
+
+*** 2022-07-13 13:21:23.539 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=396]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:23.540 - p4.v1.P4Runtime/Read << INBOUND << [callId=396]
+
+*** 2022-07-13 13:21:23.540 - p4.v1.P4Runtime/Read CLOSED [callId=396]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:24.331 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\255k\376$\244#\005\005dU\245\357\001\347\324\v_\317\200p\356\033\205\303X\202\034\177v\341j(\376=\204\276\2108\252\254\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:24.335 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\255n\376$\244#\005\005m_\234\307\"0v\323\016\337Hn\020{\a!OemB\364wc\331\003Gj\335E\334\3565\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:24.349 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\255t\376$\244#\005\005:X\252\\+\356\366\031\302\256\274\316O\2629\375\264>\363\322\345\302\356\217b\322w\006G\207\273>\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:24.410 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\255\267\376$\244#\005\005\357_(\270-xo\"\3047\221\004\362.o\0310\262pSp8\213\005\r\244\r\035\341\222\253\337\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:24.690 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=397]
+Metadata()
+
+*** 2022-07-13 13:21:24.691 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=397]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:24.693 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=397]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:24.693 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=397]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:26.534 - p4.v1.P4Runtime/Read STARTED [callId=398]
+Metadata()
+
+*** 2022-07-13 13:21:26.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=398]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:26.535 - p4.v1.P4Runtime/Read << INBOUND << [callId=398]
+
+*** 2022-07-13 13:21:26.536 - p4.v1.P4Runtime/Read CLOSED [callId=398]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:26.539 - p4.v1.P4Runtime/Read STARTED [callId=399]
+Metadata()
+
+*** 2022-07-13 13:21:26.540 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=399]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:26.546 - p4.v1.P4Runtime/Read << INBOUND << [callId=399]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 35424
+      packet_count: 288
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:26.546 - p4.v1.P4Runtime/Read CLOSED [callId=399]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:27.425 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\271\177\376$\244#\005\005^&\315u+\362hgmf\340\032\273\263#S6.gp2}\212\322\371\243)\215\313\217\271\241\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:27.429 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\271\204\376$\244#\005\005h*%\240\251\b\032\375H\023\304\353^\364}\257ZZ\200\225\355\232F\354[\344V\"!-l\220\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:27.446 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\271\224\376$\244#\005\0053\331\230\242iy\324k^\300\022\265\265\277\235\3136\226\215\016\331\263\036\246\030\265\321\321\020K\aQ\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:27.495 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\271\303\376$\244#\005\005\304Z9\355m\234\256\332\207 &\251B\302\331$-ne\323_\201\252\264\324\205\356\333{\223\261\022\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:29.537 - p4.v1.P4Runtime/Read STARTED [callId=400]
+Metadata()
+
+*** 2022-07-13 13:21:29.554 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=400]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:29.555 - p4.v1.P4Runtime/Read << INBOUND << [callId=400]
+
+*** 2022-07-13 13:21:29.555 - p4.v1.P4Runtime/Read CLOSED [callId=400]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:30.513 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\305\216\376$\244#\005\005\n\203\365,:\3326\244\214n\232\"0\360\223\305\345w._{\024\322\243d\tbk\000l\357\240\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:30.527 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\305\235\376$\244#\005\005Sa\300\371s\202\264*k+\032b\260i\207\230e\v\022\241.\335\bI\212\275S\367\265\v\322<\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:30.544 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\305\255\376$\244#\005\005\203\221\314 \v\t\341\356\305\bH\226\331\332\255/\337[e\370Xx,eI;\371\314+8W\v\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:30.546 - p4.v1.P4Runtime/Read STARTED [callId=401]
+Metadata()
+
+*** 2022-07-13 13:21:30.546 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=401]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:30.554 - p4.v1.P4Runtime/Read << INBOUND << [callId=401]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 35793
+      packet_count: 291
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:30.554 - p4.v1.P4Runtime/Read CLOSED [callId=401]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:30.594 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\305\337\376$\244#\005\005P\217\025\f8\312\002\031\v\032\\\362\303\3532\324\032H\341\360\316~\311\214H\025Q\036\346u\276\325\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:31.25 - gnmi.gNMI/Get STARTED [callId=402]
+Metadata()
+
+*** 2022-07-13 13:21:31.26 - gnmi.gNMI/Get >> OUTBOUND >> [callId=402]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:31.30 - gnmi.gNMI/Get << INBOUND << [callId=402]
+notification {
+  timestamp: 1657718491026929429
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:31.30 - gnmi.gNMI/Get CLOSED [callId=402]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:32.532 - p4.v1.P4Runtime/Read STARTED [callId=403]
+Metadata()
+
+*** 2022-07-13 13:21:32.532 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=403]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:32.533 - p4.v1.P4Runtime/Read << INBOUND << [callId=403]
+
+*** 2022-07-13 13:21:32.533 - p4.v1.P4Runtime/Read CLOSED [callId=403]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:33.18 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=404]
+Metadata()
+
+*** 2022-07-13 13:21:33.18 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=404]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:33.22 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=404]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:33.22 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=404]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:33.614 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\321\254\376$\244#\005\005\216{\215\261\260\261\241\357\241\221\211SMF\304\322\261\f>\336\373\265u\033\255\022\'\274k\214\220c\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:33.619 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\321\261\376$\244#\005\0050\2753\252@\225\247\333\213\306\026\277t\206\222\374\204\220\361z\276\321\3101F\244k\335r\273\304A\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:33.640 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\321\306\376$\244#\005\005~dn\033/\213\220\237\357\343QU%\313S,\034\016\376\361\346\337\024\203\022\363t3?\244\237J\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:33.705 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\321\374\376$\244#\005\005\354\003\200\371\376\275\231\3633P\224\242\336\034,\033\206p\320\022\337S\fe\321\220\365\025\315Lu\340\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:34.512 - p4.v1.P4Runtime/Read STARTED [callId=405]
+Metadata()
+
+*** 2022-07-13 13:21:34.512 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=405]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:34.515 - p4.v1.P4Runtime/Read << INBOUND << [callId=405]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 36162
+      packet_count: 294
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:34.515 - p4.v1.P4Runtime/Read CLOSED [callId=405]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:35.540 - p4.v1.P4Runtime/Read STARTED [callId=406]
+Metadata()
+
+*** 2022-07-13 13:21:35.541 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=406]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:35.542 - p4.v1.P4Runtime/Read << INBOUND << [callId=406]
+
+*** 2022-07-13 13:21:35.542 - p4.v1.P4Runtime/Read CLOSED [callId=406]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:36.714 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\335\310\376$\244#\005\005\315\363t\031\264&\357\242}a\353,?\v\214\037\260\263y\236\243\310x~\252k)zl\016\350a\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:36.724 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\335\315\376$\244#\005\005\024M\352\004B\263\024\316B\320\315\030\300<\b\027\356Q\211`cF\231\025\t$\310\300j6r\213\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:36.732 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\335\332\376$\244#\005\005j\222\211\r\324R\323\312-\023\025\227\330(\352\335V\333\267\302`\t\r\376=\212@\002q\330\316b\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:36.816 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\336&\376$\244#\005\005\247[SW \322I\226\351\270w\035\323\263\025\257\035\177\373\333\a:%\234\222\t\332b\272\230}\332\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:38.534 - p4.v1.P4Runtime/Read STARTED [callId=407]
+Metadata()
+
+*** 2022-07-13 13:21:38.535 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=407]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:38.535 - p4.v1.P4Runtime/Read << INBOUND << [callId=407]
+
+*** 2022-07-13 13:21:38.536 - p4.v1.P4Runtime/Read CLOSED [callId=407]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:38.541 - p4.v1.P4Runtime/Read STARTED [callId=408]
+Metadata()
+
+*** 2022-07-13 13:21:38.548 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=408]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:38.550 - p4.v1.P4Runtime/Read << INBOUND << [callId=408]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 36408
+      packet_count: 296
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:38.550 - p4.v1.P4Runtime/Read CLOSED [callId=408]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:39.685 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=409]
+Metadata()
+
+*** 2022-07-13 13:21:39.685 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=409]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:39.686 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=409]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:39.686 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=409]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:39.795 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\351\321\376$\244#\005\005\202\313\344\354G\342\224\r\n\020\026A\364BZ\354\207\321\260\205f\0179)\275}\006sJa\2064\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:39.797 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\351\323\376$\244#\005\005\210\fu\033Zw\025\r\302\220$\204^\2073\331\003\b#\31708g\320\001\317\203\332,r\310\001\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:39.802 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\351\331\376$\244#\005\005\353\256\360.\224xe\367\357\307\307\363$(\2532\224\017m\215\177\265\340#\276\2300\276\245a5\345\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:39.895 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\3526\376$\244#\005\005<fy;\245\275\220V\334\016\337\371\355\355\226\227\227T\n\237\251\343\304\002\354KQ\255\r\a\235z\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:41.25 - gnmi.gNMI/Get STARTED [callId=410]
+Metadata()
+
+*** 2022-07-13 13:21:41.25 - gnmi.gNMI/Get >> OUTBOUND >> [callId=410]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:41.27 - gnmi.gNMI/Get << INBOUND << [callId=410]
+notification {
+  timestamp: 1657718501026317237
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:41.27 - gnmi.gNMI/Get CLOSED [callId=410]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:41.539 - p4.v1.P4Runtime/Read STARTED [callId=411]
+Metadata()
+
+*** 2022-07-13 13:21:41.539 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=411]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:41.544 - p4.v1.P4Runtime/Read << INBOUND << [callId=411]
+
+*** 2022-07-13 13:21:41.544 - p4.v1.P4Runtime/Read CLOSED [callId=411]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:42.524 - p4.v1.P4Runtime/Read STARTED [callId=412]
+Metadata()
+
+*** 2022-07-13 13:21:42.524 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=412]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:42.526 - p4.v1.P4Runtime/Read << INBOUND << [callId=412]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 36654
+      packet_count: 298
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:42.526 - p4.v1.P4Runtime/Read CLOSED [callId=412]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:42.904 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\365\364\376$\244#\005\005\373\375R\234\316\241\360.\321M\374\264\346\342\"8g&\233\216e\357p7\315n\224t\307\372\0028\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:42.914 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\270\365\370\376$\244#\005\005\253\354\275\365\240V\235\235h\004$\276\327\276\237\324z\004r\026\v\277u\200\261]\374\372\247\371W\362\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:42.922 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\270\366\b\376$\244#\005\005)l\336\342D\360l;8Qz\342\357\342\022\351\323\0054E\200\320\261\311\025{\265_(t-\357\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:42.999 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\270\366T\376$\244#\005\005\311v\347lz\360\023j\035(a\212A\311o&\216\307\017S\304\r\220\217]\213\252\352\032\3221\264\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:43.14 - p4.v1.P4Runtime/GetForwardingPipelineConfig STARTED [callId=413]
+Metadata()
+
+*** 2022-07-13 13:21:43.14 - p4.v1.P4Runtime/GetForwardingPipelineConfig >> OUTBOUND >> [callId=413]
+device_id: 1
+response_type: COOKIE_ONLY
+
+*** 2022-07-13 13:21:43.17 - p4.v1.P4Runtime/GetForwardingPipelineConfig << INBOUND << [callId=413]
+config {
+  cookie {
+    cookie: 15894892460229573075
+  }
+}
+
+*** 2022-07-13 13:21:43.17 - p4.v1.P4Runtime/GetForwardingPipelineConfig CLOSED [callId=413]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:44.542 - p4.v1.P4Runtime/Read STARTED [callId=414]
+Metadata()
+
+*** 2022-07-13 13:21:44.543 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=414]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:44.544 - p4.v1.P4Runtime/Read << INBOUND << [callId=414]
+
+*** 2022-07-13 13:21:44.544 - p4.v1.P4Runtime/Read CLOSED [callId=414]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:46.14 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\002\034\376$\244#\005\005(\350\322+\366b\372\313\265\335+\210z\225\347\0234\365\375 }U\020\021Vr\304\323\204\\5\"\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:46.30 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\002+\376$\244#\005\005\374zb\005\"\353\3579f<\004\230[\245\267\342\250\250?\242\220\2078 \216%,\261/\370CG\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:46.40 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\271\0026\376$\244#\005\005(\327k\000\367\030\"5E\374NV\224[|\365%\367U2\tk\365G\357\311\240a\2141>\275\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:46.95 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\271\002m\376$\244#\005\005\277ZO\036H\250y\315\372S\226\257\020\253-m\232%\344ov\240\"\216\374\nO\226\206\332Y\332\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:46.510 - p4.v1.P4Runtime/Read STARTED [callId=415]
+Metadata()
+
+*** 2022-07-13 13:21:46.510 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=415]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:46.511 - p4.v1.P4Runtime/Read << INBOUND << [callId=415]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 37146
+      packet_count: 302
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:46.511 - p4.v1.P4Runtime/Read CLOSED [callId=415]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:47.537 - p4.v1.P4Runtime/Read STARTED [callId=416]
+Metadata()
+
+*** 2022-07-13 13:21:47.537 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=416]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:47.538 - p4.v1.P4Runtime/Read << INBOUND << [callId=416]
+
+*** 2022-07-13 13:21:47.538 - p4.v1.P4Runtime/Read CLOSED [callId=416]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:49.132 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\016J\376$\244#\005\005\250\237\340.~\201Eq/\342\213\033\346\214\034{dPX\2655G|\203J\307\306\226\204\001 x\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:49.137 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\016P\376$\244#\005\005l\222\236\2329\251t\033\360\362\302$7\211\220\255\a\352\224R\355\313\246s\304A\031\226\362?\342:\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:49.159 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\271\016X\376$\244#\005\005YLn\0230b\'\327A\a\353\\\016\236\3420\250\266\376\273\r\275\226\210\036\376h/\313\221\273u\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:49.195 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf1\376\f\244#\005\004\000\000\001\201\367\271\016\210\376$\244#\005\005\330\201\026\264x\340\232\217\223\352\350\311\326\362\302\223\347_}J\331\326\2271\302\370~\212\025\276P\366\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+  metadata {
+    metadata_id: 2
+    value: "\000"
+  }
+}
+
+*** 2022-07-13 13:21:50.531 - p4.v1.P4Runtime/Read STARTED [callId=417]
+Metadata()
+
+*** 2022-07-13 13:21:50.531 - p4.v1.P4Runtime/Read STARTED [callId=418]
+Metadata()
+
+*** 2022-07-13 13:21:50.531 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=417]
+device_id: 1
+entities {
+  action_profile_group {
+    action_profile_id: 285229850
+  }
+}
+entities {
+  action_profile_member {
+    action_profile_id: 285229850
+  }
+}
+
+*** 2022-07-13 13:21:50.537 - p4.v1.P4Runtime/Read << INBOUND << [callId=417]
+
+*** 2022-07-13 13:21:50.537 - p4.v1.P4Runtime/Read CLOSED [callId=417]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:50.537 - p4.v1.P4Runtime/Read >> OUTBOUND >> [callId=418]
+device_id: 1
+entities {
+  table_entry {
+    table_id: 33605373
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33573501
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33592650
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    counter_data {
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:50.538 - p4.v1.P4Runtime/Read << INBOUND << [callId=418]
+entities {
+  table_entry {
+    table_id: 33592650
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33589970
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33594817
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33599257
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33559858
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\207"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\210\314"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+      byte_count: 37392
+      packet_count: 304
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\b\006"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\211B"
+        mask: "\377\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    match {
+      field_id: 4
+      ternary {
+        value: "\206\335"
+        mask: "\377\377"
+      }
+    }
+    match {
+      field_id: 5
+      ternary {
+        value: ":"
+        mask: "\377"
+      }
+    }
+    match {
+      field_id: 6
+      ternary {
+        value: "\210"
+        mask: "\377"
+      }
+    }
+    action {
+      action {
+        action_id: 16782152
+      }
+    }
+    priority: 40001
+    counter_data {
+    }
+  }
+}
+entities {
+  table_entry {
+    table_id: 33557865
+    action {
+      action {
+        action_id: 16800567
+      }
+    }
+    is_default_action: true
+  }
+}
+
+*** 2022-07-13 13:21:50.539 - p4.v1.P4Runtime/Read CLOSED [callId=418]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:51.25 - gnmi.gNMI/Get STARTED [callId=419]
+Metadata()
+
+*** 2022-07-13 13:21:51.25 - gnmi.gNMI/Get >> OUTBOUND >> [callId=419]
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth1"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+path {
+  elem {
+    name: "interfaces"
+  }
+  elem {
+    name: "interface"
+    key {
+      key: "name"
+      value: "spine2-eth2"
+    }
+  }
+  elem {
+    name: "state"
+  }
+  elem {
+    name: "counters"
+  }
+}
+encoding: PROTO
+
+*** 2022-07-13 13:21:51.28 - gnmi.gNMI/Get << INBOUND << [callId=419]
+notification {
+  timestamp: 1657718511026540966
+  update {
+    path {
+      elem {
+        name: "interfaces"
+      }
+      elem {
+        name: "interface"
+        key {
+          key: "name"
+          value: "spin... TRUNCATED!
+
+*** 2022-07-13 13:21:51.28 - gnmi.gNMI/Get CLOSED [callId=419]
+Status{code=OK, description=null, cause=null}
+Metadata()
+
+*** 2022-07-13 13:21:52.193 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0021\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\032@\376$\244#\005\005\316\336q\023\244A\343\205#\277\361\3037\232J\256f4\352\225\0016@Kk\237\v\r\307\274-8\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\001"
+  }
+}
+
+*** 2022-07-13 13:21:52.194 - p4.v1.P4Runtime/StreamChannel >> OUTBOUND >> [callId=0]
+packet {
+  payload: "\001\200\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\021\244#\005\002device:spine2\376\f\244#\005\004\000\000\001\201\367\271\032A\376$\244#\005\005Q\270\237\371\250\272(\345`\326YI;;\355kHw?12A\343\267\257\247\327\320_\306\001\265\000\000"
+  metadata {
+    metadata_id: 1
+    value: "\000\002"
+  }
+}
+
+*** 2022-07-13 13:21:52.217 - p4.v1.P4Runtime/StreamChannel << INBOUND << [callId=0]
+packet {
+  payload: "\302\000\000\016\002\353\237g\311B\210\314\002\a\004\000\000\000\000\000\000\004\002\0022\006\002\000x\376\022\244#\005\001ONOS Discovery\376\020\244#\005\002device:leaf2\376\f\244#\005\004\000\000\001\201\367\271\032

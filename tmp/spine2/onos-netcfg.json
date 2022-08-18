@@ -1,0 +1,11 @@
+{
+  "devices": {
+    "device:spine2": {
+      "basic": {
+        "managementAddress": "grpc://localhost:50004?device_id=1", 
+        "driver": "stratum-bmv2", 
+        "pipeconf": "org.onosproject.pipelines.basic"
+      }
+    }
+  }
+}
