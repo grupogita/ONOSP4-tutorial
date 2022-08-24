@@ -28,24 +28,16 @@ class TutorialTopo(Topo):
 
         # Leaves
 
-
-
         # gRPC port 50001
         s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
 
-        """
-        TO DO
-        Add two host and create links between the SW and them. h1 should have
-        the mac address 00:00:00:00:00:01 and IP 10.0.0.1/24, for h2 use
-        00:00:00:00:00:02 and IP 10.0.0.2/24.
-        h2. Besides, the first link (h1-s1) should have the following specifications:
-                        a bandwidth of 2 Mbit, a delay of 10000us and a loss of 5%.
-        the second link (h2-s2) should have the following specifications:
-                        a bandwidth of 5 Mbit,  a delay of 1ms and a loss of 2%.
+        # IPv4 hosts attached to S1
+        h1 = self.addHost('h1', mac="00:00:00:00:00:01", ip='10.0.0.1/24') #, gw='10.0.0.254')
+        self.addLink(s1, h1)  #Port 1
 
-
-                        HINT: search on google -> self.addlink use_htb=True
-        """
+        # IPv4 hosts attached to S2
+        h2 = self.addHost('h2', mac="00:00:00:00:00:02", ip='10.0.0.2/24') #, gw='10.0.0.254')
+        self.addLink(s1, h2)  #Port 2
 
 
 def main():
