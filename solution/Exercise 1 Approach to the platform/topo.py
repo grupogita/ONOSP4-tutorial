@@ -33,11 +33,11 @@ class TutorialTopo(Topo):
 
         # IPv4 hosts attached to S1
         h1 = self.addHost('h1', mac="00:00:00:00:00:01", ip='10.0.0.1/24') #, gw='10.0.0.254')
-        self.addLink(s1, h1)  #Port 1
+        self.addlink(s1, h1, bw=2, delay='10ms', loss=5, use_htb=True)   #Host1  #Port 1
 
         # IPv4 hosts attached to S2
         h2 = self.addHost('h2', mac="00:00:00:00:00:02", ip='10.0.0.2/24') #, gw='10.0.0.254')
-        self.addLink(s1, h2)  #Port 2
+        self.addlink(s1, h2, bw=5, delay='1ms', loss=2, use_htb=True)  #Port 2
 
 
 def main():
