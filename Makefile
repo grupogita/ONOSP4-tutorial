@@ -50,7 +50,7 @@ restart: reset start
 onos-cli:
 	$(info *** Connecting to the ONOS CLI... password: rocks)
 	$(info *** Top exit press Ctrl-D)
-	@ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o LogLevel=ERROR -p 8101 onos@localhost
+	@ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "HostKeyAlgorithms=+ssh-rsa" -o LogLevel=ERROR -p 8101 onos@localhost
 
 onos-log:
 	docker-compose logs -f onos
