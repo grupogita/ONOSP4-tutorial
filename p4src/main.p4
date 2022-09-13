@@ -248,9 +248,9 @@ control DeparserImpl(packet_out packet, in parsed_headers_t hdr) {
        packet.emit(hdr.ethernet);
 
 	/*
-	TO DO
-		For getting a sucessfully response, please e
-	      emit the correspondent ipv4 packet.
+	TO DO:
+              In order to get a successfull response, 
+	      modify this method to emit an ipv4 packet.
 	*/
 
     }
