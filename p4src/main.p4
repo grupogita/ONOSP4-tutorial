@@ -67,7 +67,6 @@ struct parsed_headers_t {
 
 
 struct local_metadata_t {
-    is_mitm_t mitm;
     bit<9>    port1;
     bit<9>    port2;
 }
