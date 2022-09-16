@@ -39,9 +39,9 @@ class TutorialTopo(Topo):
         the mac address 00:00:00:00:00:01 and IP 10.0.0.1/24, for h2 use
         00:00:00:00:00:02 and IP 10.0.0.2/24.
         h2. Besides, the first link (h1-s1) should have the following specifications:
-                        a bandwidth of 2 Mbit, a delay of 10000us and a loss of 5%.
+                        a bandwidth of 2 Mbps, a delay of 10000us and a loss of 5%.
         the second link (h2-s2) should have the following specifications:
-                        a bandwidth of 5 Mbit,  a delay of 1ms and a loss of 2%.
+                        a bandwidth of 5 Mbps,  a delay of 1ms and a loss of 2%.
 
 
                         HINT: search on google -> self.addlink use_htb=True
