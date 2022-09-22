@@ -34,14 +34,14 @@ class TutorialTopo(Topo):
         s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
 
         """
-        TO DO
-        Add two host and create links between the SW and them. h1 should have
-        the mac address 00:00:00:00:00:01 and IP 10.0.0.1/24, for h2 use
-        00:00:00:00:00:02 and IP 10.0.0.2/24.
-        h2. Besides, the first link (h1-s1) should have the following specifications:
-                        a bandwidth of 2 Mbps, a delay of 10000us and a loss of 5%.
-        the second link (h2-s2) should have the following specifications:
-                        a bandwidth of 5 Mbps,  a delay of 1ms and a loss of 2%.
+        TO-DO
+        Add two hosts and create links between the SW and them. h1 should have
+        the mac address 00:00:00:00:00:01 and IP 10.0.0.1/24. For h2 use
+        00:00:00:00:00:02 and 10.0.0.2/24 for the mac address and ip addres respectively.
+        Besides, the first link (h1-s1) should have the following specifications:
+                        Bandwidth of 2 Mbps, delay of 10000us and loss of 5%.
+        The second link (h2-s2) should have the following specifications:
+                        Bandwidth of 5 Mbps, delay of 1ms and loss of 2%.
 
 
                         HINT: search on google -> self.addlink use_htb=True
@@ -49,8 +49,8 @@ class TutorialTopo(Topo):
 
 
 def main():
-	net = Mininet(topo=TutorialTopo(), controller=None, link=TCLink)#, switch=OVSKernelSwitch)
-	net.staticArp() #Avoiding ARP process
+	net = Mininet(topo=TutorialTopo(), controller=None, link=TCLink)
+	net.staticArp() #Avoid ARP process
 	net.start()
 	CLI(net)
 	net.stop()
