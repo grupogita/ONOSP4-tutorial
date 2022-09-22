@@ -243,13 +243,14 @@ control ComputeChecksumImpl(inout parsed_headers_t hdr,
 
 control DeparserImpl(packet_out packet, in parsed_headers_t hdr) {
     apply {
-    	 packet.emit(hdr.cpu_in);
+       packet.emit(hdr.cpu_in);
        packet.emit(hdr.ethernet);
 
 	/*
-	TO DO:
+	TO-DO:
               In order to get a successfull response, 
-	      modify this method to emit an ipv4 packet.
+	      modify this method to emit a packet containing an ipv4
+	      header.
 	*/
 
     }
