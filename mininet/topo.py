@@ -28,13 +28,11 @@ class TutorialTopo(Topo):
 
         # Leaves
 
-
-
         # gRPC port 50001
         s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
 
         """
-        TO-DO
+        Exercise 1 TO-DO:
         Add two hosts and create links between the SW and them. h1 should have
         the mac address 00:00:00:00:00:01 and IP 10.0.0.1/24. For h2 use
         00:00:00:00:00:02 and 10.0.0.2/24 for the mac address and ip addres respectively.
