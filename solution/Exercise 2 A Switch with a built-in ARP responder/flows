@@ -1,6 +1,6 @@
-/* Exercise 2 TO-DO: Input the fully qualified name of the table and the fully
+/* Exercise 1 TO-DO: Input the fully qualified name of the table and the fully
    qualified name of the action. 
-   Hint: Check the main.p4 file to have an idea about this values
+   Hint: Check the main.p4 file to have an idea about these values.
 */
 {
    "priority": 40001,
@@ -71,6 +71,7 @@
    }
  }
 
+********************************************************************
 
 /* Exercise 2 TO-DO: 
    1. Input the fully qualified name of the table and the fully
@@ -117,7 +118,7 @@
  }
 
 
-// Same information for the flow entry corresponding to the other port
+// Same information structure for the flow entry corresponding to the other host
 
 {
    "priority": 40001,
