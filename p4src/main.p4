@@ -4,14 +4,9 @@
 #define CPU_PORT 255
 #define CPU_CLONE_SESSION_ID 99
 
-typedef bit<9>   port_num_t;
-typedef bit<9>   mitm_num_t;
-typedef bit<1>   is_mitm_t;
 typedef bit<48>  macAddr_t;
 typedef bit<32>  ip4Addr_t;
 typedef bit<16>  mcast_group_id_t;
-
-
 
 const bit<16> ETHERTYPE_IPV4    = 0x0800;
 
@@ -57,14 +52,12 @@ header cpu_out_header_t {
     bit<7>      _pad;
 }
 
-
 struct parsed_headers_t {
     ethernet_t ethernet;
     ipv4_t ipv4;
     cpu_out_header_t cpu_out;
     cpu_in_header_t cpu_in;
 }
-
 
 struct local_metadata_t {
     bit<9>    port1;
@@ -247,7 +240,7 @@ control DeparserImpl(packet_out packet, in parsed_headers_t hdr) {
        packet.emit(hdr.ethernet);
 
 	/*
-	TO-DO:
+	Exercise 1 TO-DO:
               In order to get a successfull response, 
 	      modify this method to emit a packet containing an ipv4
 	      header.
