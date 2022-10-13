@@ -1,0 +1,153 @@
+/* Exercise 2 TO-DO: Input the fully qualified name of the table and the fully
+   qualified name of the action. 
+   Hint: Check the main.p4 file to have an idea about this values
+*/
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "IngressPipeImpl.l2_exact_table",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "IngressPipeImpl.set_egress_port",
+         "actionParams": {"port_num": "0000000000000001"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.ethernet.dst_addr",
+                    "match": "exact",
+                    "value": "000000000001"
+                }
+            ]
+        }
+     ]
+   }
+ }
+
+
+// Same information structure for the flow entry corresponding to the other port
+
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "IngressPipeImpl.l2_exact_table",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "IngressPipeImpl.set_egress_port",
+         "actionParams": {"port_num": "0000000000000002"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.ethernet.dst_addr",
+                    "match": "exact",
+                    "value": "000000000002"
+                }
+            ]
+        }
+     ]
+   }
+ }
+
+
+/* Exercise 2 TO-DO: 
+   1. Input the fully qualified name of the table and the fully
+      qualified name of the action.
+   2. Indicate that the match for this table is performed with the
+      Protocol Target Address of the ARP header.
+   3. Write the IP address of host h1 in hexadecimal approximation.   
+   Hint 1: Check the main.p4 file to have an idea about these values
+   Hint 2: For Step 3, consider each octet of the IP address as a two
+   hexadecimal digits number.
+*/
+
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "IngressPipeImpl.arp_exact",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "IngressPipeImpl.arp_reply",
+         "actionParams": {"request_mac": "000000000001"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.arp.dst_ip",
+                    "match": "exact",
+                    "value": "0a000001"
+                }
+            ]
+        }
+     ]
+   }
+ }
+
+
+// Same information for the flow entry corresponding to the other port
+
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "IngressPipeImpl.arp_exact",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "IngressPipeImpl.arp_reply",
+         "actionParams": {"request_mac": "000000000002"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.arp.dst_ip",
+                    "match": "exact",
+                    "value": "0a000002"
+                }
+            ]
+        }
+     ]
+   }
+ }
