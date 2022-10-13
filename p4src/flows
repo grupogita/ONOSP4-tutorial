@@ -3,14 +3,14 @@
    "timeout": 0,  
    "isPermanent": true,  
    "deviceId": "device:s1",
-   "tableId": "IngressPipeImpl.//TO DO -  TABLE NAME//",
+   "tableId": "IngressPipeImpl.//Exercise 1 TO-DO - Complete the fully qualified name of the table//",
    "appId": "0",  
    "treatment": {  
      "instructions": [  
        {  
          "type": "PROTOCOL_INDEPENDENT",
          "subtype": "ACTION",
-         "actionId": "IngressPipeImpl.//TO DO -  ACTION NAME//",
+         "actionId": "IngressPipeImpl.//Exercise 1 TO-DO - Complete the fully qualified name of the action//",
          "actionParams": {"port_num": "0000000000000002"}
        }  
      ]  
