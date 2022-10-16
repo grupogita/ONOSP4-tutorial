@@ -31,6 +31,10 @@ onos@root> app activate org.onosproject.netconf
 
 `onos@root > cfg get org.onosproject.provider.host.impl.HostLocationProvider`
 
+For example, to modify the requestIpv6ND variable, you can use the following command:
+
+`onos@root > cfg set org.onosproject.provider.host.impl.HostLocationProvider requestIpv6ND false`
+
 
 ## Create the P4 program file
 
