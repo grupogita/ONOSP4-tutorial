@@ -1,15 +1,14 @@
 # Programming of a Switch with built-in ARP Responder
 
-In this exercise, you will program a switch capable to responde to ARP requests by itself. This exercise is similar to the exercise 2 based on the docker infrastructure. A main difference of this exercise is that you will have to implement an ONOS application which will discover the MAC addresses and will populate the switch table containing the mapping between MAC and IP addresses.
+In this exercise, you will program a switch capable to respond to ARP requests by itself. This exercise is similar to the exercise 2 based on the docker infrastructure. A main difference of this exercise is that you will have to implement an ONOS application which will discover the MAC addresses and will populate the switch table containing the mapping between MAC and IP addresses.
 
 ## Previous configuration of ONOS
 
 In order to implement the topology for this exercise, some previous steps will have to be done in the ONOS environment. We will use the Command Line Interface (CLI) to apply these changes.
 
-* Access the ONOS CLI. Remember that the default password is rocks
+* Access the ONOS CLI. Remember that the default password is rocks.
 
 `ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "HostKeyAlgorithms=+ssh-rsa" -o LogLevel=ERROR -p 8101 onos@localhost`
-
 
 
 * Check the installed applications:
@@ -17,7 +16,7 @@ In order to implement the topology for this exercise, some previous steps will h
 `onos@root> apps -s`
 
 
-* Enable the applications Stratum Drivers, BMV2 Drivers, HostLocationProvider and NetConf Provider
+* Enable the applications Stratum Drivers, BMV2 Drivers, HostLocationProvider and NetConf Provider.
 
 ```
 onos@root> app activate org.onosproject.drivers.stratum
@@ -26,8 +25,7 @@ onos@root> app activate org.onosproject.hostprovider
 onos@root> app activate org.onosproject.netconf
 ```
 
-
-* List the configuration variables for the implementing class of the HostLocationProviderApplication (i.e. org.onosproject.provider.host.impl.HostLocationProvider). Make sure that only the requestArp parameter has value true. In case it does not, modify it with the cfg set subcommand
+* List the configuration variables for the implementing class of the HostLocationProviderApplication (i.e. org.onosproject.provider.host.impl.HostLocationProvider). Make sure that only the requestArp parameter has value true. In case it does not, modify it with the cfg set subcommand.
 
 `onos@root > cfg get org.onosproject.provider.host.impl.HostLocationProvider`
 
@@ -53,10 +51,26 @@ $ p4c -b bmv2 --p4runtime-files sw_gita.p4info.txt sw_gita.p4
 
 With this command, you indicate that you will be compiling a program for the stratum_bmv2 switch, you will generate the runtime file in format txt, and you will pass the name of your P4 source file.
 
+# Note
+At the time of writing this tutorial, recent documentation of p4c indicates that the clone3() function which is used in different examples of code to implement the clone_to_cpu() action of the acl_table is deprecated (See [This post](https://github.com/jafingerhut/p4-guide/blob/master/v1model-special-ops/README.md). Since we faced some problems when following the indications on the replacement of clone3(), we have provided a workaround consisting in using the docker image of p4c which is originally used in the ngsdn tutorial.
+
+In order to install and use the p4c docker image, follow the steps indicated below:
+
+* Pull the docker image.
+
+`$ docker pull opennetworking/p4c:stable@sha256:8f9d27a6edf446c3801db621359fec5de993ebdebc6844d8b1292e369be5dfea`
+
+* Compile the P4 program by using the docker image.
+
+```
+$ docker run --rm -v $dir:/workdir -w /workdir opennetworking/p4c:stable p4c-bm2-ss --arch v1model -o p4src/sw_gita.json --p4runtime-files p4src/sw_gita.p4info.txt --Wdisable=unsupported p4src/sw_gita.p4
+```
+
+Note: Make sure to execute this command in the base directory of the tutorial exercise (Exercise 2.0). Set the dir variable to the path name of the directory (Hint: You can use the output of the pwd command).
 
 ## Modification of the Pipeconf application
 
-In order to integrate stratum_bmv2 switches with ONOS, the controller needs to be aware of the presence of the switch and its pipeline configuration. ONOS does this through an application that takes as input the "executable" of the switch and its runtime file. In the app subdirectory, you will find this application. Modify the following files to reflect the required changes
+In order to integrate stratum_bmv2 switches with ONOS, the controller needs to be aware of the presence of the switch and its pipeline configuration. ONOS does this through an application that takes as input the "executable" of the switch and its runtime file. In the app subdirectory, you will find this application. Modify the following files to reflect the required changes.
 
 * app/src/main/java/co/edu/udea/gita/tutorial/pipeconf/InterpreterImpl.java
 
@@ -89,7 +103,7 @@ $ cd app
 $ mvn clean package
 ```
 
-If the compilation is succesfull, you will find the gita-p4-tutorial-1.0-SNAPSHOT.oar file in the target directory
+If the compilation is succesfull, you will find the gita-p4-tutorial-1.0-SNAPSHOT.oar file in the target directory.
 
 ## Deploy the application
 
@@ -97,9 +111,10 @@ After compiling the ONOS application, it can be deployed through the web interfa
 
 ```
 $ curl --fail -sSL --user onos:rocks --noproxy localhost -X POST -HContent-Type:application/octet-stream \
-                'http://localhost:8181/onos/v1/applications?activate=true' \
+                'http://A.B.C.D:8181/onos/v1/applications?activate=true' \
                 --data-binary @target/gita-p4-tutorial-1.0-SNAPSHOT.oar
 ```
+where A.B.C.D is the IP of the controller. If you are running the commands directly on the Operating System where you installed ONOS, this IP address can be replaced with localhost. 
 
 You can confirm the deployment by inspecting the ONOS log:
 
@@ -107,5 +122,57 @@ You can confirm the deployment by inspecting the ONOS log:
 
 ## Load the Network Configuration file in ONOS
 
-As previously mentioned, ONOS must be aware of the devices contained in the topology. After deploying the pipeconf application, then a network configuration file must be installed within ONOS. In the mininet subdirectory you can find the netcfg.json file supplies to the controller information of the topology that will be executed later. In particular, take a look in the information associated to the switch, which is contained in the devices section. The key elements here are the managementAddress and the pipeconf
+As previously mentioned, ONOS must be aware of the devices contained in the topology. After deploying the pipeconf application, then a network configuration file must be installed within ONOS. In the mininet subdirectory you can find the netcfg.json file supplies to the controller information of the topology that will be executed later. In particular, take a look in the information associated to the switch, which is contained in the devices section. The key elements here are the managementAddress and the pipeconf. The managementAddress defines the management address and port of the stratum_bmv2 switch that will be included in the topology. The pipeconf field refers to the name of the piepconf application deployed in the previous step.
 
+In the repository we provide a template for the network configuration file. This template can be loaded to ONOS through the REST interface with the following command:
+
+```
+$ curl --fail -sSL --user onos:rocks --noproxy localhost -X POST -H 'Content-Type:application/json' \
+                http://A.B.C.D:8181/onos/v1/network/configuration -d@./mininet/netcfg.json
+```
+
+where A.B.C.D is the IP of the controller. If you are running the commands directly on the Operating System where you installed ONOS, this IP address can be replaced with localhost.
+
+## Run the mininet topology
+
+In the subdirectory mininet you will find two files topo.py and stratum2.py. topo.py contains the topology file. In this file you will create a basic topology based on two hosts connected to a single switch, which will be implemented as a stratum_bmv2 switch. Follow the TO-DO comments. On the other hand, stratum2.py is a wrapper class which performs the invocation of a stratum_bmv2 and includes it in the mininet topology. Take a look on this file and adjust the parameters indicated with the TO-DO comments.
+
+## Test the topology
+
+After performing the previous steps and deploying and configuring all the components, you should be able to ping from one of the hosts of the topology to the other. It might be necessary that you ping first in one directrion (e.g. from h1 to h2) and later in the reverse direction (h2 to h1) so that the switch learns the mapping of MAC address and IP addresses of the host.
+
+## Troubleshooting
+
+In case that the test does not work, there are several troubleshootings commands that you might like to use in order to check several aspects:
+
+Note: In the commands, A.B.C.D represents the IP address of the ONOS instance. If you are connected to the machine where it is running, you can use localhost as replacement of the IP address.
+
+Note: The value of the option --user corresponds to the username and password to access the ONOS web interface. By default, these are onos:rocks
+
+* Installed flows
+
+The following command allows you to check which flows are installed by ONOS into the switch
+
+`$ curl --fail -sSl --user <user>:<password> -X GET --header 'Accept: application/json' 'http://A.B.C.D:8181/onos/v1/flows' `
+
+* Network configuration
+
+The following commands allows you to check the network configuration loaded in the ONOS controller.
+
+Note: The ouput of this command should be similar to the contents of the netcfg.json file that was loaded previously.
+
+`$ curl --fail -sSl --user <user>:<password> -X GET --header 'Accept: application/json' 'http://A.B.C.D:8181/onos/v1/network/configuration'`
+
+* Deletion of flows
+
+It might be necessary to delete flows. You can use the following command:
+
+`$ curl --fail -sSl --user <user>:<password> -X DELETE --header 'Accept: application/json' 'http://A.B.C.D:8181/onos/v1/flows/device%3As1/1'`
+
+where XXX is the UTF-8 codified device ID and YYY is the flow ID. 
+
+Note 1: The default device ID in this tutorial is "device:s1". The UTF-8 codified device ID would be "device:%3As1".
+
+Note 2: The flow ID can be determined by using the command indicated above.
+
+Remember that you can also access to the REST interface in a more friendly way through the URL of the ONOS documentation. This URL is http://A.B.C.D:8181/onos/v1/docs/. When prompted for Username and Password, these are the same values used to access the ONOS Web Interface.
