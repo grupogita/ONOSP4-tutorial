@@ -50,8 +50,10 @@ public final class PipeconfLoader {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
-    private static final String P4INFO_PATH = "/sw_gita3.p4info.txt";
-    private static final String BMV2_JSON_PATH = "/sw_gita3.json";
+    // Exercise 2.0 TO-DO: Adjusts the names of the runtime file and the
+    // output of the compiler file
+    private static final String P4INFO_PATH = "<SET ME>";
+    private static final String BMV2_JSON_PATH = "<SET ME>";
 
 
     @Reference(cardinality = ReferenceCardinality.MANDATORY)
