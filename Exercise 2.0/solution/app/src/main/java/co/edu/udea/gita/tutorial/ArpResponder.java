@@ -51,10 +51,7 @@ import org.onosproject.net.pi.runtime.PiAction;
 import org.onosproject.net.pi.runtime.PiActionParam;
 
 
-/**
- * Sample application that permits only one ICMP ping per minute for a unique
- * src/dst MAC pair per switch.
- */
+
 @Component(immediate = true)
 public class ArpResponder {
 
@@ -117,7 +114,6 @@ public class ArpResponder {
         } 
     }
 
-    // Installs a temporary drop rule for the ICMP pings between given srd/dst.
     private void recordArp(DeviceId deviceId, MacAddress senderMac, Ip4Address senderIp) {
 
             final PiCriterion hostMacCriterion = PiCriterion.builder()
