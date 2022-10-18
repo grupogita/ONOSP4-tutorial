@@ -23,14 +23,6 @@ from stratum2 import NoOffloadHost
 CPU_PORT = 255
 
 
-# Exercise 2.0 TO-DO: Set the absolute path to the compiler output file
-# and the name of the pipeconf application.
-class BMV2Switch(StratumBmv2Switch):
-    def __init__(self, *args, **kwargs):
-        StratumBmv2Switch.__init__(self, name='s1', json="SETME", 
-                loglevel="trace", pipeconf="SETME", stratum=True, grpcport=50001,netcfg=True)
-
-
 class TutorialTopo(Topo):
     """2x2 fabric topology with IPv4 hosts"""
 
@@ -43,7 +35,11 @@ class TutorialTopo(Topo):
         # gRPC port 50001
 
 	# Exercise 2.0 TO-DO: Instantiate the class of the stratum switch
+	# Remember to adjust the corresponding parameters in the class
+	# definition file
         s1 = self.addSwitch('s1', cls=SETME, cpuport=CPU_PORT)
+	
+	
         """
         Exercise 2.0 TO-DO:
         Add two hosts and create links between the SW and them. h1 should have
