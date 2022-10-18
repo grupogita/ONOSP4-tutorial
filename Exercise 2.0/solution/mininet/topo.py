@@ -22,12 +22,6 @@ from stratum2 import NoOffloadHost
 CPU_PORT = 255
 
 
-class BMV2Switch(StratumBmv2Switch):
-    def __init__(self, *args, **kwargs):
-        StratumBmv2Switch.__init__(self, name='s1', json="/home/p4/ejemplo_gita/p4src/sw_gita3.json", 
-                loglevel="trace", pipeconf="co.edu.udea.gita.p4-tutorial", stratum=True, grpcport=50001,netcfg=True)
-
-
 class TutorialTopo(Topo):
     """2x2 fabric topology with IPv4 hosts"""
 
