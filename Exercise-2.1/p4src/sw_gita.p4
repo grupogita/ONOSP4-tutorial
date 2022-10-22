@@ -17,24 +17,6 @@
 // CPU_PORT.
 #define CPU_CLONE_SESSION_ID 99
 
-// Review this set of parameters to update the code to remove the
-// deprecated calling to clone3()
-const bit<8> EMPTY_FL    = 0;
-const bit<8> RESUB_FL_1  = 1;
-const bit<8> CLONE_FL_1  = 2;
-const bit<8> RECIRC_FL_1 = 3;
-
-struct meta_t {
-    @field_list(RESUB_FL_1, CLONE_FL_1)
-    bit<8>  f1;
-    @field_list(RECIRC_FL_1)
-    bit<16> f2;
-    @field_list(CLONE_FL_1)
-    bit<8>  f3;
-    @field_list(RESUB_FL_1)
-    bit<32> f4;
-}
-
 // Type aliases defined for convenience
 typedef bit<9>   port_num_t;
 typedef bit<48>  mac_addr_t;
@@ -136,7 +118,7 @@ struct parsed_headers_t {
 }
 
 struct local_metadata_t {
-	@field_list(0)
+	@field_list(1)
 	port_num_t ingress_port;
 }
 
@@ -151,6 +133,7 @@ parser ParserImpl (packet_in packet,
                    inout standard_metadata_t standard_metadata)
 {
     state start {
+    	local_metadata.ingress_port = standard_metadata.ingress_port;
         transition select(standard_metadata.ingress_port) {
             CPU_PORT: parse_packet_out;
             default: parse_ethernet;
@@ -260,23 +243,7 @@ control IngressPipeImpl (inout parsed_headers_t    hdr,
     }
 
     action clone_to_cpu() {
-
-        // Description taken from NGSDN-TUTORIAL
-        // Cloning is achieved by using a v1model-specific primitive. Here we
-        // set the type of clone operation (ingress-to-egress pipeline), the
-        // clone session ID (the CPU one), and the metadata fields we want to
-        // preserve for the cloned packet replica.
-        clone3(CloneType.I2E, CPU_CLONE_SESSION_ID, { standard_metadata.ingress_port });
-
-        // Note (Saguti): According to recent information, the clone3() function is
-        // deprecated in current implementation of p4c. The language documentation 
-        // indicttes that the packet cloning should be performed as follows. However, 
-        // since it is presenting issues, in this tutorial we still resort to clone3()
- 	// and we perform the compilation using the docker image of p4c.
-
-	//local_metadata.ingress_port = standard_metadata.ingress_port;
-        //resubmit_preserving_field_list(RESUB_FL_1);
-        //clone_preserving_field_list(CloneType.I2E, CPU_CLONE_SESSION_ID,0);
+        clone_preserving_field_list(CloneType.I2E, CPU_CLONE_SESSION_ID,1);
     }
 
     table acl_table {
@@ -400,7 +367,7 @@ control EgressPipeImpl (inout parsed_headers_t hdr,
             //    ingress port (standard_metadata.ingress_port).
 
             hdr.cpu_in.setValid();
-            hdr.cpu_in.ingress_port = standard_metadata.ingress_port;
+            hdr.cpu_in.ingress_port = local_metadata.ingress_port;
             exit;
         }
 
