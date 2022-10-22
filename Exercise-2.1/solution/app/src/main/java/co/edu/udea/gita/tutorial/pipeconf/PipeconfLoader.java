@@ -50,8 +50,8 @@ public final class PipeconfLoader {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
-    private static final String P4INFO_PATH = "/sw_gita3.p4info.txt";
-    private static final String BMV2_JSON_PATH = "/sw_gita3.json";
+    private static final String P4INFO_PATH = "/sw_gita.p4info.txt";
+    private static final String BMV2_JSON_PATH = "/sw_gita.json";
 
 
     @Reference(cardinality = ReferenceCardinality.MANDATORY)
