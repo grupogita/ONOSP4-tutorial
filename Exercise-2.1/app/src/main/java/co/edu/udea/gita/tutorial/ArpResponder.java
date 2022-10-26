@@ -51,10 +51,6 @@ import org.onosproject.net.pi.runtime.PiAction;
 import org.onosproject.net.pi.runtime.PiActionParam;
 
 
-/**
- * Sample application that permits only one ICMP ping per minute for a unique
- * src/dst MAC pair per switch.
- */
 @Component(immediate = true)
 public class ArpResponder {
 
