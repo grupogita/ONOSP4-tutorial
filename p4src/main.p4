@@ -376,9 +376,6 @@ control DeparserImpl(packet_out packet, in parsed_headers_t hdr) {
                 header.
         */
 
-                packet.emit(hdr.ipv4);
-
-
         /*
                 Exercise 2 TO-DO: Include the ARP header in outgoing packets
                 where applicable
