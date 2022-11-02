@@ -48,6 +48,9 @@ class TutorialTopo(Topo):
 
 def main():
 	net = Mininet(topo=TutorialTopo(), controller=None, link=TCLink)
+	# Exercise 2 TO-DO:
+	# Comment out the static ARP enabling, since for that exercise we precisely
+	# want that the host execute ARP requests
 	net.staticArp() #Avoid ARP process
 	net.start()
 	CLI(net)
