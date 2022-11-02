@@ -1,6 +1,7 @@
 /* Exercise 1 TO-DO: Input the fully qualified name of the table and the fully
    qualified name of the action. 
-   Hint: Check the main.p4 file to have an idea about these values.
+   Hint: Check the main.p4 file to have an idea about these values. This name 
+   corresponds to the block and entity (table, action) separated by a dot.
 */
 {
    "priority": 40001,
