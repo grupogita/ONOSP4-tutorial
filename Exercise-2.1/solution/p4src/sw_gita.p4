@@ -306,14 +306,6 @@ control EgressPipeImpl (inout parsed_headers_t hdr,
     apply {
 
         if (standard_metadata.egress_port == CPU_PORT) {
-            // *** TODO EXERCISE 4
-            // Implement logic such that if the packet is to be forwarded to the
-            // CPU port, e.g., if in ingress we matched on the ACL table with
-            // action send/clone_to_cpu...
-            // 1. Set cpu_in header as valid
-            // 2. Set the cpu_in.ingress_port field to the original packet's
-            //    ingress port (standard_metadata.ingress_port).
-
             hdr.cpu_in.setValid();
             hdr.cpu_in.ingress_port = local_metadata.ingress_port;
             exit;
