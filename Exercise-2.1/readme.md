@@ -51,23 +51,6 @@ $ p4c -b bmv2 --p4runtime-files sw_gita.p4info.txt sw_gita.p4
 
 With this command, you indicate that you will be compiling a program for the stratum_bmv2 switch, you will generate the runtime file in format txt, and you will pass the name of your P4 source file.
 
-# Note
-At the time of writing this tutorial, recent documentation of p4c indicates that the clone3() function which is used in different examples of code to implement the clone_to_cpu() action of the acl_table is deprecated (See [This post](https://github.com/jafingerhut/p4-guide/blob/master/v1model-special-ops/README.md). Since we faced some problems when following the indications on the replacement of clone3(), we have provided a workaround consisting in using the docker image of p4c which is originally used in the ngsdn tutorial.
-
-In order to install and use the p4c docker image, follow the steps indicated below:
-
-* Pull the docker image.
-
-`$ docker pull opennetworking/p4c:stable@sha256:8f9d27a6edf446c3801db621359fec5de993ebdebc6844d8b1292e369be5dfea`
-
-* Compile the P4 program by using the docker image.
-
-```
-$ docker run --rm -v $dir:/workdir -w /workdir opennetworking/p4c:stable p4c-bm2-ss --arch v1model -o p4src/sw_gita.json --p4runtime-files p4src/sw_gita.p4info.txt --Wdisable=unsupported p4src/sw_gita.p4
-```
-
-Note: Make sure to execute this command in the base directory of the tutorial exercise (Exercise 2.0). Set the dir variable to the path name of the directory (Hint: You can use the output of the pwd command).
-
 ## Modification of the Pipeconf application
 
 In order to integrate stratum_bmv2 switches with ONOS, the controller needs to be aware of the presence of the switch and its pipeline configuration. ONOS does this through an application that takes as input the "executable" of the switch and its runtime file. In the app subdirectory, you will find this application. Modify the following files to reflect the required changes.
