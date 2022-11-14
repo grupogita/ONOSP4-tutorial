@@ -23,13 +23,13 @@ typedef bit<48>  mac_addr_t;
 typedef bit<32>  ipv4_addr_t;
 typedef bit<16>  l4_port_t;
 
-// Exercise 2.0 TO-DO: Define values for these constants representing
+// Exercise 2.1 TO-DO: Define values for these constants representing
 // the Ethertype codes
 const bit<16> ETHERTYPE_IPV4 = <SET ME>;
 const bit<16> ETHERTYPE_ARP = <SET ME>;
 
 /*
-    Exercise 2.0 TO-DO: Define symbolic constants for different ARP fields.
+    Exercise 2.1 TO-DO: Define symbolic constants for different ARP fields.
     Refer to RFC 826 for the sizes and reference values.
 */
 //const bit<16> ARP_HTYPE = <SET ME>; //Ethernet Hardware
@@ -53,7 +53,7 @@ header ethernet_t {
 
 
 /*
-  Exercise 2.0 TO-DO: Define a type for the header of an ARP packet.
+  Exercise 2.1 TO-DO: Define a type for the header of an ARP packet.
   Remember that an ARP packet contains the following fields:
   Hardware Type, Prtocol Type, Hardware Length, Protocol Length,
   Operation Code, Source Hardware Address, Source Protocol Address,
@@ -110,7 +110,7 @@ struct parsed_headers_t {
     cpu_in_header_t cpu_in;
     ethernet_t ethernet;
 /*
-    Exercise 2.0 TO-DO: Include the ARP header in the set of
+    Exercise 2.1 TO-DO: Include the ARP header in the set of
     headers recognized by this switch
 */
 
@@ -146,7 +146,7 @@ parser ParserImpl (packet_in packet,
     }
 
     /*
-        Exercise 2.0 TO-DO: Perform three changes to the parse_ethernet
+        Exercise 2.1 TO-DO: Perform three changes to the parse_ethernet
         state:
              1. Create a transition selection based on the ether_type field
                 of the ethernet header. (Hint: use the P4 transition select
@@ -163,7 +163,7 @@ parser ParserImpl (packet_in packet,
     }
 
         /*
-                Exercise 2.0 TO-DO: Define the parse_arp state which should
+                Exercise 2.1 TO-DO: Define the parse_arp state which should
                 perform the following two things:
                 1. Extract the arp header from the packet
                 2. Create a transition selection based on the ARP Operation
@@ -263,7 +263,7 @@ control IngressPipeImpl (inout parsed_headers_t    hdr,
     }
 
         /*
-                Exercise 2.0 TO-DO: Create an action to build an ARP reply.
+                Exercise 2.1 TO-DO: Create an action to build an ARP reply.
                 The name of this action will be arp_reply.
                 This action will receive a MAC address provided by the
                 table match. Keep in mind the following things for this
@@ -299,7 +299,7 @@ control IngressPipeImpl (inout parsed_headers_t    hdr,
 
 
         /*
-                Exercise 2.0 TO-DO: Define the arp_exact table. This table
+                Exercise 2.1 TO-DO: Define the arp_exact table. This table
                 will be composed of a key to match the Target Protocol Address
                 field of the ARP header, in exact way. The actions for this
                 table will be the arp_reply, and the drop action. The drop
@@ -331,7 +331,7 @@ control IngressPipeImpl (inout parsed_headers_t    hdr,
         }
 
         /*
-                Exercise 2.0 TO-DO: Modify the apply block according to the
+                Exercise 2.1 TO-DO: Modify the apply block according to the
                 following algorithm:
                 1. If the packet contains valid Ethernet and IPv4 headers,
                    then apply the l2_exact_table which will forward packets
@@ -358,14 +358,6 @@ control EgressPipeImpl (inout parsed_headers_t hdr,
     apply {
 
         if (standard_metadata.egress_port == CPU_PORT) {
-            // *** TODO EXERCISE 4
-            // Implement logic such that if the packet is to be forwarded to the
-            // CPU port, e.g., if in ingress we matched on the ACL table with
-            // action send/clone_to_cpu...
-            // 1. Set cpu_in header as valid
-            // 2. Set the cpu_in.ingress_port field to the original packet's
-            //    ingress port (standard_metadata.ingress_port).
-
             hdr.cpu_in.setValid();
             hdr.cpu_in.ingress_port = local_metadata.ingress_port;
             exit;
@@ -389,7 +381,7 @@ control DeparserImpl(packet_out packet, in parsed_headers_t hdr) {
         packet.emit(hdr.ethernet);
 
         /*
-                Exercise 2.0 TO-DO: Include the ARP header in outgoing packets
+                Exercise 2.1 TO-DO: Include the ARP header in outgoing packets
                 where applicable
         */
 
