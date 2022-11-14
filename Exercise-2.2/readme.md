@@ -3,6 +3,8 @@
 In this exercise, you will program a switch capable to respond to filter unexpected TCP messages by itself. The motivation behind this exercise is described
 in detail [here](https://github.com/grupogita/ONOSP4-tutorial/wiki/Exercise-2.2:-A-switch-filtering-unexpected-TCP-Packets) in the wiki of this tutorial.
 
+Note: If you have already solved the [Exercise 2.1](https://github.com/grupogita/ONOSP4-tutorial/blob/main/Exercise-2.1/readme.md), you can omit the steps for the previous configuration of ONOS.
+
 ## Previous configuration of ONOS
 
 In order to implement the topology for this exercise, some previous steps will have to be done in the ONOS environment. We will use the Command Line Interface (CLI) to apply these changes.
