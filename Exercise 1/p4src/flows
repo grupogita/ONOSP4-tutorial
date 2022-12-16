@@ -1,0 +1,73 @@
+/* Exercise 1 TO-DO: Input the fully qualified name of the table and the fully
+   qualified name of the action. 
+   Hint: Check the main.p4 file to have an idea about these values. This name 
+   corresponds to the block and entity (table, action) separated by a dot.
+*/
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "<SET ME>",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "<SET ME>",
+         "actionParams": {"port_num": "0000000000000001"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.ethernet.dst_addr",
+                    "match": "exact",
+                    "value": "000000000001"
+                }
+            ]
+        }
+     ]
+   }
+ }
+
+
+// Same information structure for the flow entry corresponding to the other port
+
+{
+   "priority": 40001,
+   "timeout": 0,
+   "isPermanent": true,
+   "deviceId": "device:s1",
+   "tableId": "<SET ME>",
+   "appId": "0",
+   "treatment": {
+     "instructions": [
+       {
+         "type": "PROTOCOL_INDEPENDENT",
+         "subtype": "ACTION",
+         "actionId": "<SET ME>",
+         "actionParams": {"port_num": "0000000000000002"}
+       }
+     ]
+   },
+   "selector": {
+     "criteria": [
+       {
+            "type": "PROTOCOL_INDEPENDENT",
+            "matches": [
+                {
+                    "field": "hdr.ethernet.dst_addr",
+                    "match": "exact",
+                    "value": "000000000002"
+                }
+            ]
+        }
+     ]
+   }
+ }
