@@ -24,11 +24,11 @@ class TutorialTopo(Topo):
 
     def __init__(self, *args, **kwargs):
         Topo.__init__(self, *args, **kwargs)
-        # gRPC port 50001
+        
+        #Switches
         s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
-
-        # gRPC port 50002
         s2 = self.addSwitch('s2', cls=StratumBmv2Switch, cpuport=CPU_PORT)
+        
         """
         Exercise 3 TO-DO:
         Add two hosts and create links between the H1-S1, S1-S2 and SW2-H2. 

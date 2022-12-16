@@ -1,0 +1,287 @@
+//Flows to be installed in switch 1
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s1",
+  "tableId": "IngressPipeImpl.set_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.add_vlan_tag",
+        "actionParams": {"port_num": "0000000000000003"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.src_addr",
+                   "match": "exact",
+                   "value": "000000000001"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s1",
+  "tableId": "IngressPipeImpl.set_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.add_vlan_tag",
+        "actionParams": {"port_num": "0000000000000003"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.src_addr",
+                   "match": "exact",
+                   "value": "000000000002"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s1",
+  "tableId": "IngressPipeImpl.extract_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.set_egress_port",
+        "actionParams": {"port_num": "0000000000000001"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.dst_addr",
+                   "match": "exact",
+                   "value": "000000000001"
+               },
+               {
+                   "field": "hdr.vlan_802_1q.vid",
+                   "match": "exact",
+                   "value": "00a"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s1",
+  "tableId": "IngressPipeImpl.extract_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.set_egress_port",
+        "actionParams": {"port_num": "0000000000000002"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.dst_addr",
+                   "match": "exact",
+                   "value": "000000000002"
+               },
+               {
+                   "field": "hdr.vlan_802_1q.vid",
+                   "match": "exact",
+                   "value": "14"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+//Flows to be installed in switch 2
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s2",
+  "tableId": "IngressPipeImpl.set_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.add_vlan_tag",
+        "actionParams": {"port_num": "0000000000000003"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.src_addr",
+                   "match": "exact",
+                   "value": "000000000003"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s2",
+  "tableId": "IngressPipeImpl.set_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.add_vlan_tag",
+        "actionParams": {"port_num": "0000000000000003"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.src_addr",
+                   "match": "exact",
+                   "value": "000000000004"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s2",
+  "tableId": "IngressPipeImpl.extract_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.set_egress_port",
+        "actionParams": {"port_num": "0000000000000001"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.dst_addr",
+                   "match": "exact",
+                   "value": "000000000003"
+               },
+               {
+                   "field": "hdr.vlan_802_1q.vid",
+                   "match": "exact",
+                   "value": "00a"
+               }
+           ]
+       }
+    ]
+  }
+}
+
+{
+  "priority": 40001,
+  "timeout": 0,
+  "isPermanent": true,
+  "deviceId": "device:s2",
+  "tableId": "IngressPipeImpl.extract_vlan_tag",
+  "appId": "0",
+  "treatment": {
+    "instructions": [
+      {
+        "type": "PROTOCOL_INDEPENDENT",
+        "subtype": "ACTION",
+        "actionId": "IngressPipeImpl.set_egress_port",
+        "actionParams": {"port_num": "0000000000000002"}
+      }
+    ]
+  },
+  "selector": {
+    "criteria": [
+      {
+           "type": "PROTOCOL_INDEPENDENT",
+           "matches": [
+               {
+                   "field": "hdr.ethernet.dst_addr",
+                   "match": "exact",
+                   "value": "000000000004"
+               },
+               {
+                   "field": "hdr.vlan_802_1q.vid",
+                   "match": "exact",
+                   "value": "14"
+               }
+           ]
+       }
+    ]
+  }
+}

@@ -24,9 +24,7 @@ class TutorialTopo(Topo):
     def __init__(self, *args, **kwargs):
         Topo.__init__(self, *args, **kwargs)
 
-        # Leaves
-
-        # gRPC port 50001
+        #Switch
         s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
 
         """
