@@ -29,8 +29,8 @@ class VlanTopo(Topo):
 
         """
         Exercise 4 TO-DO:
-        Add four hosts and create links between the H1-SW1, H2-SW1, SW1-SW2, 
-        H3-SW2, and H4-SW2.
+        Add four hosts and create links between the H1-SW1, H2-SW1, H3-SW2, 
+        H4-SW2, and SW1-SW2.
 
         For the assignment of mac addresses, please support yourself on the  
         image shown in the approach of the exercise.
