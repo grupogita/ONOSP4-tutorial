@@ -11,8 +11,15 @@ typedef bit<32>  ipv4_addr_t;
 const bit<16> ETHERTYPE_IPV4    = 0x0800;
 const bit<16> ETHERTYPE_VLAN    = 0x8100;
 
-const bit<12> VLAN_10 = 0x00a;  //VLAN ID. Must be in hexadecimal
-const bit<12> VLAN_20 = 0x014; //VLAN ID. Must be in hexadecimal
+/* Exercise 4 TO-DO
+Choose two numbers in hexadecimal format to represent the VLAN IDs for 
+two different networks and write it on the spaces marked as "VLAN ID". 
+These numbers must be unique and fall within the range of 000 to FFF. 
+  -HINT: You can use any online hexadecimal converter tool to convert 
+  decimal numbers into hexadecimal format.
+*/
+const bit<12> VLAN_10 = /*VLAN ID*/;
+const bit<12> VLAN_20 = /*VLAN ID*/;
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //+++++++++++++++++++++++++++ HEADER DEFINITIONS ++++++++++++++++++++++++++
@@ -83,19 +90,16 @@ parser ParserImpl (packet_in packet,
                    out parsed_headers_t hdr,
                    inout local_metadata_t local_metadata,
                    inout standard_metadata_t standard_metadata){
-
         state start {
                 transition select(standard_metadata.ingress_port) {
                         CPU_PORT: parse_packet_out;
                         default: parse_ethernet;
                 }
         }       
-
         state parse_packet_out {
                 packet.extract(hdr.cpu_out);
                 transition parse_ethernet;
         }
-
         state parse_ethernet {
                 packet.extract(hdr.ethernet);
                 transition select(hdr.ethernet.ether_type){
@@ -104,17 +108,21 @@ parser ParserImpl (packet_in packet,
                         default: parse_ipv4;
                 }
         }
-        
+        /* Exercise 4 TO-DO
+        Modify the P4 code to direct the packet to be processed as IPv4 
+        traffic after the VLAN untagging process is completed. To achieve 
+        this, you will need to include a P4 statement that sets the Ethernet 
+        type of the packet to IPv4.
+        */
         state parse_vlan {
-                packet.extract(hdr.vlan_802_1q);
+                // HINT: Use .extract()
                 transition select(hdr.vlan_802_1q.ether_type){
                         ETHERTYPE_IPV4: parse_ipv4;
                         default: accept;
                 }
         }
-
         state parse_ipv4 {
-                packet.extract(hdr.ipv4);
+                // HINT: Use .extract()
                 transition accept;
         }
 }
@@ -204,7 +212,8 @@ control IngressPipeImpl(inout parsed_headers_t    hdr,
                 }
                 hdr.vlan_802_1q.pri = 0; //Priority code point field
                 hdr.vlan_802_1q.cfi = 0; //Drop eligible indicator field
-                hdr.vlan_802_1q.ether_type = hdr.ethernet.ether_type; //Sets the ethertype from the ethernet frame to the ethertype filed inside the vlan header
+                //Sets the ethertype from the ethernet frame to the ethertype filed inside the vlan header
+                hdr.vlan_802_1q.ether_type = hdr.ethernet.ether_type; 
                 hdr.ethernet.ether_type = ETHERTYPE_VLAN; //Sets the ethernet ethertype with the vlan TPID 0x8100
                 
                 standard_metadata.egress_spec = port_num; //egress port
@@ -236,8 +245,17 @@ control IngressPipeImpl(inout parsed_headers_t    hdr,
                         set_vlan_tag.apply(); //Includes the vlan header in the packet
                 } else if (hdr.ethernet.ether_type == ETHERTYPE_VLAN) {
                         extract_vlan_tag.apply(); //Extracts the vlan tag and reads the vlan id to forward the packet
-                        hdr.ethernet.ether_type = hdr.vlan_802_1q.ether_type; //Sets the ethertype from the vlan header to the ethertype in the ethernet frame 
-                        hdr.vlan_802_1q.setInvalid(); //Removes the vlan header
+                        //Sets the ethertype from the vlan header to the ethertype in the ethernet frame 
+                        hdr.ethernet.ether_type = hdr.vlan_802_1q.ether_type; 
+                        
+                        /* Exercise 4 TO-DO
+                        modify the P4 code to remove the VLAN header after 
+                        encapsulating the IPv4 header (do it on the space 
+                        marked as "P4 Statement"). To achieve this, you 
+                        will need to include a P4 statement that pops the 
+                        VLAN header from the packet header stack.
+                        */
+                        hdr.vlan_802_1q. /*P4 Statement*/; 
                 }else{
                         mark_to_drop(standard_metadata);
                 }
