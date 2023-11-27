@@ -14,7 +14,7 @@ from mininet.node import CPULimitedHost
 
 import sys
 
-sys.path.insert(0, '~/ngsdn-tutorial/mininet')
+sys.path.insert(0, '~/ONOS-P4TUTORIAL/Exercise-1/mininet')
 from stratum_new import StratumBmv2Switch
 
 CPU_PORT = 255
@@ -25,7 +25,11 @@ class TutorialTopo(Topo):
         Topo.__init__(self, *args, **kwargs)
 
         #Switch
-        s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT)
+	""" Exercise 1 TO-DO
+ 	Set the path to the json file which is output of the P4 compilation step
+  	"""
+        s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT, onosdevid="1", json="<FIX ME>")
+
 
         """
         Exercise 1 TO-DO:
