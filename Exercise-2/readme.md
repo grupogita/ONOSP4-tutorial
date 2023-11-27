@@ -18,6 +18,37 @@ The exercise requires the creation of two links between two devices (H1 - H2) an
 
 The first task to perform is to edit the file “topo.py” by addressing the tasks indicated with the _”TO-DO”_ comments within the code. Particularly for this exercise, and in case of being using the same file after completing the Exercise 1, you must peform the change suggested at the _"Exercise 2 TO-DO"_ comment to disable the static ARP mapping.
 
+## Previous configuration of ONOS
+
+In order to implement the topology for this exercise, some previous steps will have to be done in the ONOS environment. We will use the Command Line Interface (CLI) to apply these changes.
+
+* Access the ONOS CLI. Remember that the default password is rocks.
+
+`ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "HostKeyAlgorithms=+ssh-rsa" -o LogLevel=ERROR -p 8101 onos@localhost`
+
+
+* Check the installed applications:
+
+`onos@root> apps -s`
+
+
+* Enable the applications Stratum Drivers, BMV2 Drivers, HostLocationProvider and NetConf Provider.
+
+```
+onos@root> app activate org.onosproject.drivers.stratum
+onos@root> app activate org.onosproject.drivers.bmv2
+onos@root> app activate org.onosproject.hostprovider
+onos@root> app activate org.onosproject.netconf
+```
+
+* List the configuration variables for the implementing class of the HostLocationProviderApplication (i.e. org.onosproject.provider.host.impl.HostLocationProvider). Make sure that only the requestArp parameter has value true. In case it does not, modify it with the cfg set subcommand.
+
+`onos@root > cfg get org.onosproject.provider.host.impl.HostLocationProvider`
+
+For example, to modify the requestIpv6ND variable, you can use the following command:
+
+`onos@root > cfg set org.onosproject.provider.host.impl.HostLocationProvider requestIpv6ND false`
+
 ## Compilation of the P4 program
 
 After performing the required modifications, you should compile the P4 program. In this step, you will generate both the "executable" for 
