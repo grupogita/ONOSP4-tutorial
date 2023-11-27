@@ -28,7 +28,7 @@ class TutorialTopo(Topo):
 	""" Exercise 1 TO-DO
  	Set the path to the json file which is output of the P4 compilation step
   	"""
-        s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT, onosdevid="1", json="<FIX ME>")
+        s1 = self.addSwitch('s1', cls=StratumBmv2Switch, cpuport=CPU_PORT, onosdevid="1", json="<TODO>")
 
 
         """
