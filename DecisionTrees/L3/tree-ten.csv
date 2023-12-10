@@ -1,0 +1,11 @@
+ip_proto = [];
+src_port = [2951, 3071, 49280, 60489];
+dst_port = [60, 67, 1917];
+ when src_port<=3071 and dst_port<=67 and dst_port<=60  then 4;
+ when src_port<=3071 and dst_port<=67 and dst_port>60  then 1;
+ when src_port<=3071 and dst_port>67 and src_port<=2951  then 4;
+ when src_port<=3071 and dst_port>67 and src_port>2951  then 4;
+ when src_port>3071 and src_port<=49280 and dst_port<=1917  then 3;
+ when src_port>3071 and src_port<=49280 and dst_port>1917  then 0;
+ when src_port>3071 and src_port>49280 and src_port<=60489  then 4;
+ when src_port>3071 and src_port>49280 and src_port>60489  then 3;

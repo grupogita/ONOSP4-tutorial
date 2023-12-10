@@ -1,0 +1,288 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 37114914
+    name: "MyIngress.acl_table"
+    alias: "acl_table"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.ingress_port"
+    bitwidth: 9
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ethernet.dstAddr"
+    bitwidth: 48
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 3
+    name: "hdr.ethernet.srcAddr"
+    bitwidth: 48
+    match_type: TERNARY
+  }
+  match_fields {
+    id: 4
+    name: "hdr.ethernet.etherType"
+    bitwidth: 16
+    match_type: TERNARY
+  }
+  action_refs {
+    id: 22952082
+  }
+  action_refs {
+    id: 31123019
+  }
+  action_refs {
+    id: 25652968
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  direct_resource_ids: 332339774
+  size: 1024
+}
+tables {
+  preamble {
+    id: 42313592
+    name: "MyIngress.feature1_exact"
+    alias: "feature1_exact"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 29266193
+  }
+  direct_resource_ids: 326576659
+  size: 1024
+}
+tables {
+  preamble {
+    id: 34414117
+    name: "MyIngress.feature2_exact"
+    alias: "feature2_exact"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.tcp.srcPort"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 25506974
+  }
+  direct_resource_ids: 327959409
+  size: 1024
+}
+tables {
+  preamble {
+    id: 38604638
+    name: "MyIngress.feature3_exact"
+    alias: "feature3_exact"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.tcp.dstPort"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 24370810
+  }
+  direct_resource_ids: 327827502
+  size: 1024
+}
+tables {
+  preamble {
+    id: 33757179
+    name: "MyIngress.ipv4_exact"
+    alias: "ipv4_exact"
+  }
+  match_fields {
+    id: 1
+    name: "meta.action_select1"
+    bitwidth: 14
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "meta.action_select2"
+    bitwidth: 14
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.action_select3"
+    bitwidth: 14
+    match_type: RANGE
+  }
+  action_refs {
+    id: 28792405
+  }
+  action_refs {
+    id: 25652968
+  }
+  action_refs {
+    id: 21257015
+  }
+  direct_resource_ids: 331242543
+  size: 1024
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 22952082
+    name: "MyIngress.send_to_cpu"
+    alias: "send_to_cpu"
+  }
+}
+actions {
+  preamble {
+    id: 31123019
+    name: "MyIngress.clone_to_cpu"
+    alias: "clone_to_cpu"
+  }
+}
+actions {
+  preamble {
+    id: 28792405
+    name: "MyIngress.ipv4_forward"
+    alias: "ipv4_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 29266193
+    name: "MyIngress.set_actionselect1"
+    alias: "set_actionselect1"
+  }
+  params {
+    id: 1
+    name: "featurevalue1"
+    bitwidth: 14
+  }
+}
+actions {
+  preamble {
+    id: 25506974
+    name: "MyIngress.set_actionselect2"
+    alias: "set_actionselect2"
+  }
+  params {
+    id: 1
+    name: "featurevalue2"
+    bitwidth: 14
+  }
+}
+actions {
+  preamble {
+    id: 24370810
+    name: "MyIngress.set_actionselect3"
+    alias: "set_actionselect3"
+  }
+  params {
+    id: 1
+    name: "featurevalue3"
+    bitwidth: 14
+  }
+}
+direct_counters {
+  preamble {
+    id: 332339774
+    name: "acl_table_counter"
+    alias: "acl_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 37114914
+}
+direct_counters {
+  preamble {
+    id: 326576659
+    name: "feature1_table_counter"
+    alias: "feature1_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 42313592
+}
+direct_counters {
+  preamble {
+    id: 327959409
+    name: "feature2_table_counter"
+    alias: "feature2_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 34414117
+}
+direct_counters {
+  preamble {
+    id: 327827502
+    name: "feature3_table_counter"
+    alias: "feature3_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 38604638
+}
+direct_counters {
+  preamble {
+    id: 331242543
+    name: "ipv4_exact_table_counter"
+    alias: "ipv4_exact_table_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  direct_table_id: 33757179
+}
+type_info {
+}
