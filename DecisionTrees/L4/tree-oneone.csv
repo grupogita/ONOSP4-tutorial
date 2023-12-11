@@ -1,7 +1,0 @@
-ip_proto = [];
-src_port = [2910, 25581, 48920];
-dst_port = [];
- when src_port<=25581 and src_port<=2910  then 4;
- when src_port<=25581 and src_port>2910  then 4;
- when src_port>25581 and src_port<=48920  then 3;
- when src_port>25581 and src_port>48920  then 4;
