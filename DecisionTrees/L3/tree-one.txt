@@ -1,0 +1,11 @@
+ip_proto = [];
+src_port = [2872, 5019, 25581, 47939, 48920, 49909];
+dst_port = [67];
+ when src_port<=25581 and src_port<=2872 and dst_port<=67  then 4;
+ when src_port<=25581 and src_port<=2872 and dst_port>67  then 4;
+ when src_port<=25581 and src_port>2872 and src_port<=5019  then 0;
+ when src_port<=25581 and src_port>2872 and src_port>5019  then 4;
+ when src_port>25581 and src_port<=48920 and src_port<=47939  then 3;
+ when src_port>25581 and src_port<=48920 and src_port>47939  then 3;
+ when src_port>25581 and src_port>48920 and src_port<=49909  then 0;
+ when src_port>25581 and src_port>48920 and src_port>49909  then 4;
