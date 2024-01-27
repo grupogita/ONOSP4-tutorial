@@ -2,7 +2,7 @@
 	"flows": [
 		// TO-DO: This is a template to create an entry for the table associated to 
 		// Feature 1. Customize the values for the matching field, and duplicate this
-		// entry as any times neededi in order to create the remaining entries
+		// entry as any times needed in order to create the remaining entries
 		// for your tree.
 		{
 			"priority": 40001,  
@@ -59,7 +59,7 @@
 					{  
 						"type": "PROTOCOL_INDEPENDENT",
 						"subtype": "ACTION",
-						// TO-DO: Set the absolute name of the set_actionselec2
+						// TO-DO: Set the absolute name of the set_actionselect2
 						// for the table for feature 2
 						"actionId": "<FIX ME>",
 						"actionParams": {"featurevalue2": "0000000000000001"}
@@ -136,7 +136,7 @@
 		// TO-DO: This is a template to create an entry for the table associated to 
 		// forwarding table. Customize the values for the matching fields, and duplicate this
 		// entry as many times as needed in order to create the remaining entries
-		// for your tree. There should be an entry for each rule of the decision tree
+		// for your tree. There should be an entry for each rule of the decision tree.
 		{
 			"priority": 0,  
 			"timeout": 0,  
@@ -151,7 +151,7 @@
 						"subtype": "ACTION",
 						"actionId": "MyIngress.ipv4_forward",
 						// TO-DO: Customize the action parameters according to the
-						// class matching indicated in the wiki of the exercise
+						// class matching indicated in the wiki of the exercise.
 						"actionParams": {"dstAddr": "<FIX ME>", "port": "<FIX ME>"}
 					}  
 				]  
@@ -163,7 +163,7 @@
 					
 						"type": "PROTOCOL_INDEPENDENT",
 						// TO-DO: Set the values for the selector according to the
-						// configuration of your decision tree
+						// configuration of your decision tree.
 						"matches": [ 
 							{
 								"field": "meta.action_select1",
