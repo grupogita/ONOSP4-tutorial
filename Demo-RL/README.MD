@@ -8,7 +8,7 @@ The present code is a preliminary implementaiton of a solution that combines P4 
 
 The scenario herein presented is based on the code available for the paper the paper "QCMP: Load Balancing via In-Network Reinforcement Learning" [PDF](./images/Zheng_et_al_2023_QCMP_load_balancing.pdf) in 2nd ACM SIGCOMM Workshop on FIRA '23. Some aparts of the code and modified and adapted to product the present scenario. 
 
-This code is executed in an instance of the P4.org virtual machine. In particular, we started to work with the release of July 1st 20234, were we installed and deployed the code. An image of the virtual machine can be downloaded from [here](xxxxxx).
+This code is executed in an instance of the P4.org virtual machine. In particular, we started to work with the release of July 1st 20234, were we installed and deployed the code. An image of the virtual machine can be downloaded from [here](https://udeaeduco-my.sharepoint.com/:u:/g/personal/sergio_gutierrezb_udea_edu_co/EcXkZsdvi7ZGtJmXWn8t9C8BIZu1Yz1MYLxw89EkWyJ5IA?e=1lfG80).
 
 ## Getting started
 If you would like to start from scratch on a clean virtual machine instance, in order to run the scenario, clone the repository ```git clone https://github.com/grupogita/ONOSP4-tutorial/Demo-RL.git``` to a local directory in the folder tutorials and run the following 7 steps:
