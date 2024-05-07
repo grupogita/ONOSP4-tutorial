@@ -1,0 +1,318 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 39123287
+    name: "MyIngress.firewall"
+    alias: "firewall"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 29934352
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 49494153
+    name: "MyIngress.ip_forward"
+    alias: "MyIngress.ip_forward"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  action_refs {
+    id: 29683729
+  }
+  action_refs {
+    id: 25652968
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 44291963
+    name: "MyIngress.debug_flow"
+    alias: "MyIngress.debug_flow"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.tcp.syn"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "hdr.tcp.ack"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 3
+    name: "hdr.tcp.rst"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 4
+    name: "hdr.tcp.fin"
+    bitwidth: 1
+    match_type: EXACT
+  }
+  match_fields {
+    id: 5
+    name: "standard_metadata.egress_spec"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 42239332
+    name: "MyEgress.debug_flow"
+    alias: "MyEgress.debug_flow"
+  }
+  match_fields {
+    id: 1
+    name: "meta.cntSyn"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.cntSynAckRst"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  match_fields {
+    id: 3
+    name: "hdr.swtraces[0].swid"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  match_fields {
+    id: 4
+    name: "hdr.mri.count"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 47623248
+    name: "MyEgress.ip_forward"
+    alias: "MyEgress.ip_forward"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  action_refs {
+    id: 24298331
+  }
+  action_refs {
+    id: 20880156
+  }
+  action_refs {
+    id: 21257015
+    annotations: "@defaultonly"
+    scope: DEFAULT_ONLY
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 43963015
+    name: "MyEgress.swtrace"
+    alias: "swtrace"
+  }
+  action_refs {
+    id: 24573693
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "MyIngress.drop"
+  }
+}
+actions {
+  preamble {
+    id: 29934352
+    name: "MyIngress.block"
+    alias: "block"
+  }
+  params {
+    id: 1
+    name: "enabled"
+    bitwidth: 1
+  }
+}
+actions {
+  preamble {
+    id: 17475842
+    name: "MyIngress.update_ttl"
+    alias: "update_ttl"
+  }
+}
+actions {
+  preamble {
+    id: 29683729
+    name: "MyIngress.forward"
+    alias: "MyIngress.forward"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+  params {
+    id: 2
+    name: "dstMac"
+    bitwidth: 48
+  }
+}
+actions {
+  preamble {
+    id: 24573693
+    name: "MyEgress.add_swtrace"
+    alias: "add_swtrace"
+  }
+  params {
+    id: 1
+    name: "swid"
+    bitwidth: 32
+  }
+}
+actions {
+  preamble {
+    id: 24298331
+    name: "MyEgress.forward"
+    alias: "MyEgress.forward"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+  params {
+    id: 2
+    name: "dstMac"
+    bitwidth: 48
+  }
+}
+actions {
+  preamble {
+    id: 20880156
+    name: "MyEgress.drop"
+    alias: "MyEgress.drop"
+  }
+}
+registers {
+  preamble {
+    id: 377747256
+    name: "MyIngress.synReg"
+    alias: "MyIngress.synReg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 2
+}
+registers {
+  preamble {
+    id: 376796511
+    name: "MyIngress.synAckRstReg"
+    alias: "MyIngress.synAckRstReg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 2
+}
+registers {
+  preamble {
+    id: 370639336
+    name: "MyEgress.synReg"
+    alias: "MyEgress.synReg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 2
+}
+registers {
+  preamble {
+    id: 376846863
+    name: "MyEgress.synAckRstReg"
+    alias: "MyEgress.synAckRstReg"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 2
+}
+type_info {
+}

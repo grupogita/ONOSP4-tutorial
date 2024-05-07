@@ -1,0 +1,133 @@
+{
+  "target": "bmv2",
+  "p4info": "build/syn_flood_filter.p4.p4info.txt",
+  "bmv2_json": "build/syn_flood_filter.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.6.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 4,
+	"dstMac": "02:00:00:00:00:01"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 1,
+	"dstMac": "08:00:00:00:01:11"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.82"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 2,
+	"dstMac": "08:00:00:00:01:22"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.182"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 10,
+	"dstMac": "08:00:00:00:11:22"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.2.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 4,
+	"dstMac": "02:00:00:00:00:01"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.3.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 5,
+	"dstMac": "03:00:00:00:00:01"
+      }
+    },
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.254"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 3,
+	"dstMac": "ff:ff:ff:ff:ff:ff"
+      }
+    },
+    {
+      "table": "MyEgress.swtrace",
+      "default_action": true,
+      "action_name": "MyEgress.add_swtrace",
+      "action_params": {
+         "swid": 1
+       }
+    },
+    { 
+      "table": "MyIngress.firewall",
+      "match": {
+        "hdr.ipv4.srcAddr": ["10.0.1.0", 26]
+      },
+      "action_name": "MyIngress.block",
+      "action_params": {
+        "enabled": 0
+      }
+    },
+    { 
+      "table": "MyIngress.firewall",
+      "match": {
+        "hdr.ipv4.srcAddr": ["10.0.1.64", 26]
+      },
+      "action_name": "MyIngress.block",
+      "action_params": {
+        "enabled": 0
+      }
+    },
+    { 
+      "table": "MyIngress.firewall",
+      "match": {
+        "hdr.ipv4.srcAddr": ["10.0.1.128", 26]
+      },
+      "action_name": "MyIngress.block",
+      "action_params": {
+        "enabled": 0
+      }
+    },
+    { 
+      "table": "MyIngress.firewall",
+      "match": {
+        "hdr.ipv4.srcAddr": ["10.0.1.192", 26]
+      },
+      "action_name": "MyIngress.block",
+      "action_params": {
+        "enabled": 0
+      }
+    }
+
+  ]
+}

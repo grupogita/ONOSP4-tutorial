@@ -1,0 +1,1086 @@
+Calling target program-options parser
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'MyIngress.firewall': NoAction - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter264': syn_flood_filter264 - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_update_ttl': MyIngress.update_ttl - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'MyIngress.ip_forward': NoAction - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter277': syn_flood_filter277 - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'MyIngress.debug_flow': NoAction - 
+[10:58:46.545] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter285': syn_flood_filter285 - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter412': syn_flood_filter412 - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter418': syn_flood_filter418 - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'tbl_syn_flood_filter373': syn_flood_filter373 - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'MyEgress.debug_flow': NoAction - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'MyEgress.swtrace': NoAction - 
+[10:58:46.546] [bmv2] [D] [thread 24394] Set default default entry for table 'MyEgress.ip_forward': NoAction - 
+Adding interface s4-eth1 as port 1
+[10:58:46.547] [bmv2] [D] [thread 24394] Adding interface s4-eth1 as port 1
+Adding interface s4-eth2 as port 2
+[10:58:46.572] [bmv2] [D] [thread 24394] Adding interface s4-eth2 as port 2
+Adding interface s4-eth3 as port 3
+[10:58:46.612] [bmv2] [D] [thread 24394] Adding interface s4-eth3 as port 3
+Server listening on 0.0.0.0:50054
+[10:58:46.652] [bmv2] [I] [thread 24394] Starting Thrift server on port 9093
+[10:58:46.653] [bmv2] [I] [thread 24394] Thrift server was started
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Processing packet received on port 3
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Parser 'parser': start
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Extracting header 'ethernet'
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] Bytes parsed: 14
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Parser 'parser': end
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Pipeline 'ingress': start
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Action entry is NoAction - 
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] Action NoAction
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:46.676] [bmv2] [T] [thread 24404] [0.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Pipeline 'ingress': end
+[10:58:46.676] [bmv2] [D] [thread 24404] [0.0] [cxt 0] Egress port is 0
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Pipeline 'egress': start
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Looking up key:
+
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Action syn_flood_filter373
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Action entry is NoAction - 
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Action NoAction
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Action entry is NoAction - 
+[10:58:46.676] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Action NoAction
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Pipeline 'egress': end
+[10:58:46.676] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Deparser 'deparser': start
+[10:58:46.677] [bmv2] [T] [thread 24405] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:46.677] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:46.677] [bmv2] [D] [thread 24405] [0.0] [cxt 0] Deparser 'deparser': end
+[10:58:46.677] [bmv2] [D] [thread 24409] [0.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Processing packet received on port 2
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Parser 'parser': start
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Extracting header 'ethernet'
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] Bytes parsed: 14
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Parser 'parser': end
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Pipeline 'ingress': start
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] Action NoAction
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:49.016] [bmv2] [T] [thread 24404] [1.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Pipeline 'ingress': end
+[10:58:49.016] [bmv2] [D] [thread 24404] [1.0] [cxt 0] Egress port is 0
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Pipeline 'egress': start
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Looking up key:
+
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Action syn_flood_filter373
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Action NoAction
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Action NoAction
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Pipeline 'egress': end
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Deparser 'deparser': start
+[10:58:49.018] [bmv2] [T] [thread 24405] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:49.018] [bmv2] [D] [thread 24405] [1.0] [cxt 0] Deparser 'deparser': end
+[10:58:49.019] [bmv2] [D] [thread 24409] [1.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Processing packet received on port 1
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Parser 'parser': start
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Extracting header 'ethernet'
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] Bytes parsed: 14
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Parser 'parser': end
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Pipeline 'ingress': start
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] Action NoAction
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:49.269] [bmv2] [T] [thread 24404] [2.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Pipeline 'ingress': end
+[10:58:49.269] [bmv2] [D] [thread 24404] [2.0] [cxt 0] Egress port is 0
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Pipeline 'egress': start
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Looking up key:
+
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Action syn_flood_filter373
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Action NoAction
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Action entry is NoAction - 
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Action NoAction
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Pipeline 'egress': end
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Deparser 'deparser': start
+[10:58:49.270] [bmv2] [T] [thread 24405] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:49.270] [bmv2] [D] [thread 24405] [2.0] [cxt 0] Deparser 'deparser': end
+[10:58:49.270] [bmv2] [D] [thread 24409] [2.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:49.367] [bmv2] [W] [thread 24495] [P4Runtime] p4::tmp::P4DeviceConfig is deprecated
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'MyIngress.firewall': NoAction - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter264': syn_flood_filter264 - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_update_ttl': MyIngress.update_ttl - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'MyIngress.ip_forward': NoAction - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter277': syn_flood_filter277 - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'MyIngress.debug_flow': NoAction - 
+[10:58:49.371] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter285': syn_flood_filter285 - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter412': syn_flood_filter412 - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter418': syn_flood_filter418 - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'tbl_syn_flood_filter373': syn_flood_filter373 - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'MyEgress.debug_flow': NoAction - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'MyEgress.swtrace': NoAction - 
+[10:58:49.372] [bmv2] [D] [thread 24495] Set default default entry for table 'MyEgress.ip_forward': NoAction - 
+[10:58:49.375] [bmv2] [D] [thread 24495] simple_switch target has been notified of a config swap
+[10:58:49.377] [bmv2] [D] [thread 24496] Entry 0 added to table 'MyIngress.ip_forward'
+[10:58:49.377] [bmv2] [D] [thread 24496] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a00060b
+Action entry: MyIngress.forward - 3,60000000002,
+
+[10:58:49.379] [bmv2] [D] [thread 24495] Entry 1 added to table 'MyIngress.ip_forward'
+[10:58:49.379] [bmv2] [D] [thread 24495] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a00010b
+Action entry: MyIngress.forward - 1,20000000003,
+
+[10:58:49.381] [bmv2] [D] [thread 24496] Entry 2 added to table 'MyIngress.ip_forward'
+[10:58:49.381] [bmv2] [D] [thread 24496] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a000152
+Action entry: MyIngress.forward - 1,20000000003,
+
+[10:58:49.382] [bmv2] [D] [thread 24495] Entry 3 added to table 'MyIngress.ip_forward'
+[10:58:49.382] [bmv2] [D] [thread 24495] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a0001b6
+Action entry: MyIngress.forward - 1,20000000003,
+
+[10:58:49.383] [bmv2] [D] [thread 24496] Entry 4 added to table 'MyIngress.ip_forward'
+[10:58:49.383] [bmv2] [D] [thread 24496] Dumping entry 4
+Match key:
+* hdr.ipv4.dstAddr    : EXACT     0a00020b
+Action entry: MyIngress.forward - 1,20000000003,
+
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Processing packet received on port 1
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Parser 'parser': start
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Extracting header 'ethernet'
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:50.036] [bmv2] [T] [thread 24404] [3.0] [cxt 0] Bytes parsed: 14
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Parser 'parser': end
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Pipeline 'ingress': start
+[10:58:50.036] [bmv2] [T] [thread 24404] [3.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:50.036] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:50.037] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.037] [bmv2] [T] [thread 24404] [3.0] [cxt 0] Action NoAction
+[10:58:50.037] [bmv2] [T] [thread 24404] [3.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [3.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [3.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:50.037] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Pipeline 'ingress': end
+[10:58:50.037] [bmv2] [D] [thread 24404] [3.0] [cxt 0] Egress port is 0
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Processing packet received on port 2
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Parser 'parser': start
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Extracting header 'ethernet'
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] Bytes parsed: 14
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Parser 'parser': end
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Pipeline 'ingress': start
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] Action NoAction
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [4.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Pipeline 'ingress': end
+[10:58:50.037] [bmv2] [D] [thread 24404] [4.0] [cxt 0] Egress port is 0
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Processing packet received on port 3
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Parser 'parser': start
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Extracting header 'ethernet'
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] Bytes parsed: 14
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Parser 'parser': end
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Pipeline 'ingress': start
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] Action NoAction
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:50.037] [bmv2] [T] [thread 24404] [5.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Pipeline 'ingress': end
+[10:58:50.037] [bmv2] [D] [thread 24404] [5.0] [cxt 0] Egress port is 0
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Pipeline 'egress': start
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Looking up key:
+
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Action syn_flood_filter373
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Action NoAction
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:50.037] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:50.037] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Action NoAction
+[10:58:50.038] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Pipeline 'egress': end
+[10:58:50.038] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Deparser 'deparser': start
+[10:58:50.038] [bmv2] [T] [thread 24405] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:50.038] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:50.038] [bmv2] [D] [thread 24405] [3.0] [cxt 0] Deparser 'deparser': end
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Pipeline 'egress': start
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Looking up key:
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Action syn_flood_filter373
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Action NoAction
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Action NoAction
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Pipeline 'egress': end
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Deparser 'deparser': start
+[10:58:50.038] [bmv2] [T] [thread 24405] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:50.038] [bmv2] [D] [thread 24405] [4.0] [cxt 0] Deparser 'deparser': end
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Pipeline 'egress': start
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Looking up key:
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Action syn_flood_filter373
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Action NoAction
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Action NoAction
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Pipeline 'egress': end
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Deparser 'deparser': start
+[10:58:50.038] [bmv2] [T] [thread 24405] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:50.038] [bmv2] [D] [thread 24405] [5.0] [cxt 0] Deparser 'deparser': end
+[10:58:50.038] [bmv2] [D] [thread 24409] [3.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:50.038] [bmv2] [D] [thread 24409] [4.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:50.038] [bmv2] [D] [thread 24409] [5.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Processing packet received on port 3
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Parser 'parser': start
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Extracting header 'ethernet'
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] Bytes parsed: 14
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Parser 'parser': end
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Pipeline 'ingress': start
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] Action NoAction
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:50.292] [bmv2] [T] [thread 24404] [6.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Pipeline 'ingress': end
+[10:58:50.292] [bmv2] [D] [thread 24404] [6.0] [cxt 0] Egress port is 0
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Pipeline 'egress': start
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Looking up key:
+
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Action syn_flood_filter373
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Action NoAction
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Action entry is NoAction - 
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Action NoAction
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Pipeline 'egress': end
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Deparser 'deparser': start
+[10:58:50.292] [bmv2] [T] [thread 24405] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:50.292] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:50.293] [bmv2] [D] [thread 24405] [6.0] [cxt 0] Deparser 'deparser': end
+[10:58:50.293] [bmv2] [D] [thread 24409] [6.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Processing packet received on port 1
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Parser 'parser': start
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Extracting header 'ethernet'
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] Bytes parsed: 14
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Parser 'parser': end
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Pipeline 'ingress': start
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Action entry is NoAction - 
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] Action NoAction
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:56.693] [bmv2] [T] [thread 24404] [7.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Pipeline 'ingress': end
+[10:58:56.693] [bmv2] [D] [thread 24404] [7.0] [cxt 0] Egress port is 0
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Pipeline 'egress': start
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Looking up key:
+
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Action syn_flood_filter373
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Action entry is NoAction - 
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Action NoAction
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Action entry is NoAction - 
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Action NoAction
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Pipeline 'egress': end
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Deparser 'deparser': start
+[10:58:56.694] [bmv2] [T] [thread 24405] [7.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:56.694] [bmv2] [D] [thread 24405] [7.0] [cxt 0] Deparser 'deparser': end
+[10:58:56.695] [bmv2] [D] [thread 24409] [7.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Processing packet received on port 2
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Parser 'parser': start
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Extracting header 'ethernet'
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] Bytes parsed: 14
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Parser 'parser': end
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Pipeline 'ingress': start
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] Action NoAction
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:57.212] [bmv2] [T] [thread 24404] [8.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Pipeline 'ingress': end
+[10:58:57.212] [bmv2] [D] [thread 24404] [8.0] [cxt 0] Egress port is 0
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Pipeline 'egress': start
+[10:58:57.212] [bmv2] [T] [thread 24405] [8.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:57.212] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Looking up key:
+
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:57.212] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Action syn_flood_filter373
+[10:58:57.212] [bmv2] [T] [thread 24405] [8.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:57.212] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:57.212] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.213] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Action NoAction
+[10:58:57.213] [bmv2] [T] [thread 24405] [8.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:57.213] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.213] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Action NoAction
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Pipeline 'egress': end
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Deparser 'deparser': start
+[10:58:57.213] [bmv2] [T] [thread 24405] [8.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:57.213] [bmv2] [D] [thread 24405] [8.0] [cxt 0] Deparser 'deparser': end
+[10:58:57.213] [bmv2] [D] [thread 24409] [8.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Processing packet received on port 1
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Parser 'parser': start
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Extracting header 'ethernet'
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] Bytes parsed: 14
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Parser 'parser': end
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Pipeline 'ingress': start
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] Action NoAction
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:57.972] [bmv2] [T] [thread 24404] [9.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Pipeline 'ingress': end
+[10:58:57.972] [bmv2] [D] [thread 24404] [9.0] [cxt 0] Egress port is 0
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Pipeline 'egress': start
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Looking up key:
+
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Action syn_flood_filter373
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Action NoAction
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Action entry is NoAction - 
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Action NoAction
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Pipeline 'egress': end
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Deparser 'deparser': start
+[10:58:57.972] [bmv2] [T] [thread 24405] [9.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:57.972] [bmv2] [D] [thread 24405] [9.0] [cxt 0] Deparser 'deparser': end
+[10:58:57.972] [bmv2] [D] [thread 24409] [9.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Processing packet received on port 2
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Parser 'parser': start
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Extracting header 'ethernet'
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] Bytes parsed: 14
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Parser 'parser': end
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Pipeline 'ingress': start
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] Action NoAction
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:58.484] [bmv2] [T] [thread 24404] [10.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Pipeline 'ingress': end
+[10:58:58.484] [bmv2] [D] [thread 24404] [10.0] [cxt 0] Egress port is 0
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Processing packet received on port 3
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Parser 'parser': start
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Extracting header 'ethernet'
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] Bytes parsed: 14
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Parser 'parser': end
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Pipeline 'ingress': start
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] Action NoAction
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:58.484] [bmv2] [T] [thread 24404] [11.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Pipeline 'ingress': end
+[10:58:58.484] [bmv2] [D] [thread 24404] [11.0] [cxt 0] Egress port is 0
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Pipeline 'egress': start
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Looking up key:
+
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Action syn_flood_filter373
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Action NoAction
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Action NoAction
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Pipeline 'egress': end
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Deparser 'deparser': start
+[10:58:58.484] [bmv2] [T] [thread 24405] [10.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:58.484] [bmv2] [D] [thread 24405] [10.0] [cxt 0] Deparser 'deparser': end
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Pipeline 'egress': start
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Looking up key:
+
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Action syn_flood_filter373
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:58.484] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Action NoAction
+[10:58:58.484] [bmv2] [T] [thread 24405] [11.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:58.485] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.485] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Action NoAction
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Pipeline 'egress': end
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Deparser 'deparser': start
+[10:58:58.485] [bmv2] [T] [thread 24405] [11.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:58.485] [bmv2] [D] [thread 24405] [11.0] [cxt 0] Deparser 'deparser': end
+[10:58:58.485] [bmv2] [D] [thread 24409] [10.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:58.485] [bmv2] [D] [thread 24409] [11.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Processing packet received on port 3
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Parser 'parser': start
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Extracting header 'ethernet'
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Parser state 'start': key is 86dd
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] Bytes parsed: 14
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Parser 'parser': end
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Pipeline 'ingress': start
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] Action NoAction
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:58:58.740] [bmv2] [T] [thread 24404] [12.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Pipeline 'ingress': end
+[10:58:58.740] [bmv2] [D] [thread 24404] [12.0] [cxt 0] Egress port is 0
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Pipeline 'egress': start
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Looking up key:
+
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Action syn_flood_filter373
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Action NoAction
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Action entry is NoAction - 
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Action NoAction
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Pipeline 'egress': end
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Deparser 'deparser': start
+[10:58:58.740] [bmv2] [T] [thread 24405] [12.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Deparsing header 'ethernet'
+[10:58:58.740] [bmv2] [D] [thread 24405] [12.0] [cxt 0] Deparser 'deparser': end
+[10:58:58.741] [bmv2] [D] [thread 24409] [12.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Processing packet received on port 1
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Parser 'parser': start
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Extracting header 'ethernet'
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] Bytes parsed: 14
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Parser 'parser': end
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Pipeline 'ingress': start
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Action entry is NoAction - 
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] Action NoAction
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:11.029] [bmv2] [T] [thread 24404] [13.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Pipeline 'ingress': end
+[10:59:11.029] [bmv2] [D] [thread 24404] [13.0] [cxt 0] Egress port is 0
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Pipeline 'egress': start
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Looking up key:
+
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Action syn_flood_filter373
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Action entry is NoAction - 
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Action NoAction
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Action entry is NoAction - 
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Action NoAction
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Pipeline 'egress': end
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Deparser 'deparser': start
+[10:59:11.029] [bmv2] [T] [thread 24405] [13.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:11.029] [bmv2] [D] [thread 24405] [13.0] [cxt 0] Deparser 'deparser': end
+[10:59:11.029] [bmv2] [D] [thread 24409] [13.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:13.331] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Processing packet received on port 1
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Parser 'parser': start
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Extracting header 'ethernet'
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] Bytes parsed: 14
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Parser 'parser': end
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Pipeline 'ingress': start
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:13.332] [bmv2] [T] [thread 24404] [14.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Pipeline 'ingress': end
+[10:59:13.332] [bmv2] [D] [thread 24404] [14.0] [cxt 0] Egress port is 0
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Processing packet received on port 2
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Parser 'parser': start
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Extracting header 'ethernet'
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] Bytes parsed: 14
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Parser 'parser': end
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Pipeline 'ingress': start
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:13.332] [bmv2] [T] [thread 24404] [15.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Pipeline 'ingress': end
+[10:59:13.332] [bmv2] [D] [thread 24404] [15.0] [cxt 0] Egress port is 0
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Pipeline 'egress': start
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Looking up key:
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Action syn_flood_filter373
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Pipeline 'egress': end
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Deparser 'deparser': start
+[10:59:13.332] [bmv2] [T] [thread 24405] [14.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:13.332] [bmv2] [D] [thread 24405] [14.0] [cxt 0] Deparser 'deparser': end
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Pipeline 'egress': start
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Looking up key:
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Action syn_flood_filter373
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Action entry is NoAction - 
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Action NoAction
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Pipeline 'egress': end
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Deparser 'deparser': start
+[10:59:13.332] [bmv2] [T] [thread 24405] [15.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:13.332] [bmv2] [D] [thread 24405] [15.0] [cxt 0] Deparser 'deparser': end
+[10:59:13.333] [bmv2] [D] [thread 24409] [14.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:13.333] [bmv2] [D] [thread 24409] [15.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Processing packet received on port 2
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Parser 'parser': start
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Extracting header 'ethernet'
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:16.405] [bmv2] [T] [thread 24404] [16.0] [cxt 0] Bytes parsed: 14
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Parser 'parser': end
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Pipeline 'ingress': start
+[10:59:16.405] [bmv2] [T] [thread 24404] [16.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:16.405] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.405] [bmv2] [T] [thread 24404] [16.0] [cxt 0] Action NoAction
+[10:59:16.405] [bmv2] [T] [thread 24404] [16.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [16.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [16.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:16.406] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Pipeline 'ingress': end
+[10:59:16.406] [bmv2] [D] [thread 24404] [16.0] [cxt 0] Egress port is 0
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Processing packet received on port 3
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Parser 'parser': start
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Extracting header 'ethernet'
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] Bytes parsed: 14
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Parser 'parser': end
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Pipeline 'ingress': start
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [17.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Pipeline 'ingress': end
+[10:59:16.406] [bmv2] [D] [thread 24404] [17.0] [cxt 0] Egress port is 0
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Processing packet received on port 3
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Parser 'parser': start
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Extracting header 'ethernet'
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Parser state 'start': key is 86dd
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] Bytes parsed: 14
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Parser 'parser': end
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Pipeline 'ingress': start
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] Applying table 'MyIngress.firewall'
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Looking up key:
+* hdr.ipv4.srcAddr    : 00000000
+
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Table 'MyIngress.firewall': miss
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] syn_flood_filter.p4(262) Condition "meta.toBlock == 1" (node_3) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] syn_flood_filter.p4(268) Condition "hdr.ipv4.isValid()" (node_5) is false
+[10:59:16.406] [bmv2] [T] [thread 24404] [18.0] [cxt 0] syn_flood_filter.p4(274) Condition "hdr.tcp.isValid()" (node_8) is false
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Pipeline 'ingress': end
+[10:59:16.406] [bmv2] [D] [thread 24404] [18.0] [cxt 0] Egress port is 0
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Pipeline 'egress': start
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Looking up key:
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Action syn_flood_filter373
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Pipeline 'egress': end
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Deparser 'deparser': start
+[10:59:16.406] [bmv2] [T] [thread 24405] [16.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:16.406] [bmv2] [D] [thread 24405] [16.0] [cxt 0] Deparser 'deparser': end
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Pipeline 'egress': start
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Looking up key:
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Action syn_flood_filter373
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Action NoAction
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Pipeline 'egress': end
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Deparser 'deparser': start
+[10:59:16.406] [bmv2] [T] [thread 24405] [17.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:16.406] [bmv2] [D] [thread 24405] [17.0] [cxt 0] Deparser 'deparser': end
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Pipeline 'egress': start
+[10:59:16.406] [bmv2] [T] [thread 24405] [18.0] [cxt 0] syn_flood_filter.p4(410) Condition "hdr.tcp.isValid()" (node_16) is false
+[10:59:16.406] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Applying table 'tbl_syn_flood_filter373'
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Looking up key:
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Table 'tbl_syn_flood_filter373': miss
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Action entry is syn_flood_filter373 - 
+[10:59:16.406] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Action syn_flood_filter373
+[10:59:16.406] [bmv2] [T] [thread 24405] [18.0] [cxt 0] syn_flood_filter.p4(373) Primitive hdr.swtraces[0].swid
+[10:59:16.406] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Applying table 'MyEgress.debug_flow'
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Looking up key:
+* meta.cntSyn         : 00000000
+* meta.cntSynAckRst   : 00000000
+* hdr.swtraces[0].swid: 00000000
+* hdr.mri.count       : 0000
+
+[10:59:16.406] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Table 'MyEgress.debug_flow': miss
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.407] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Action NoAction
+[10:59:16.407] [bmv2] [T] [thread 24405] [18.0] [cxt 0] syn_flood_filter.p4(427) Condition "hdr.mri.isValid()" (node_23) is false
+[10:59:16.407] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Applying table 'MyEgress.ip_forward'
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 00000000
+
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Table 'MyEgress.ip_forward': miss
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Action entry is NoAction - 
+[10:59:16.407] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Action NoAction
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Pipeline 'egress': end
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Deparser 'deparser': start
+[10:59:16.407] [bmv2] [T] [thread 24405] [18.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Deparsing header 'ethernet'
+[10:59:16.407] [bmv2] [D] [thread 24405] [18.0] [cxt 0] Deparser 'deparser': end
+[10:59:16.407] [bmv2] [D] [thread 24409] [16.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:16.407] [bmv2] [D] [thread 24409] [17.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[10:59:16.407] [bmv2] [D] [thread 24409] [18.0] [cxt 0] Transmitting packet of size 70 out of port 0
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory

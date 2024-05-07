@@ -1,0 +1,64 @@
+{ 
+  "target": "bmv2",
+  "p4info": "build/syn_flood_filter.p4.p4info.txt",
+  "bmv2_json": "build/syn_flood_filter.json",
+  "table_entries": [
+    { 
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.6.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 1,
+	"dstMac": "08:00:00:00:06:11"
+      }
+    },
+    {
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 2,
+	"dstMac": "04:00:00:00:00:03"
+      }
+    },
+    {
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.82"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 2,
+	"dstMac": "04:00:00:00:00:03"
+      }
+    },
+    {
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.1.182"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 2,
+	"dstMac": "04:00:00:00:00:03"
+      }
+    },
+    {
+      "table": "MyIngress.ip_forward",
+      "match": {
+        "hdr.ipv4.dstAddr": ["10.0.2.11"]
+      },
+      "action_name": "MyIngress.forward",
+      "action_params": {
+        "port": 2,
+        "dstMac": "04:00:00:00:00:03"
+      }
+    }
+
+  ]
+}
+
