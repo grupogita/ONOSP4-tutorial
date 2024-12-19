@@ -1,0 +1,193 @@
+{
+	"flows": [
+		// TO-DO: This is a template to create an entry for the table associated to 
+		// Feature 1. Customize the values for the matching field, and duplicate this
+		// entry as any times needed in order to create the remaining entries
+		// for your tree.
+		{
+			"priority": 40001,  
+			"timeout": 0,  
+			"isPermanent": true,  
+			"deviceId": "device:s1",
+			"tableId": "MyIngress.feature1_exact",
+			"appId": "co.edu.udea.gita.p4-tutorial",
+			"treatment":	{  
+				"instructions": [  
+					{  
+						"type": "PROTOCOL_INDEPENDENT",
+						"subtype": "ACTION",
+						"actionId": "MyIngress.set_actionselect1",
+						"actionParams": {"featurevalue1": "0000000000000001"}
+					}  
+				]  
+			},  
+			"selector":	{  
+				"criteria": [   
+					{
+						"type": "PROTOCOL_INDEPENDENT",
+						"matches": [ 
+							{
+								"field": "hdr.ipv4.protocol",
+								"match": "range",
+								// TO-DO: Set the values for the range
+								// for feature 1. Remember these values are
+								// expressed in hexadecimal
+								// HINT: Since these values are strings, they
+								// must be enclosed between quotes
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							}
+						]
+					}
+				] 				 
+			}  
+		},
+		// TO-DO: This is a template to create an entry for the table associated to 
+		// Feature 2. Customize the values for the matching field, and duplicate this
+		// entry as many times as needed in order to create the remaining entries
+		// for your tree.
+		{
+			"priority": 40001,  
+			"timeout": 0,  
+			"isPermanent": true,  
+			"deviceId": "device:s1",
+			// TO-DO; Set the absolute name of the table for Feature 2
+			"tableId": "<FIX ME>",
+			"appId": "co.edu.udea.gita.p4-tutorial",
+			"treatment": {  
+				"instructions": [  
+					{  
+						"type": "PROTOCOL_INDEPENDENT",
+						"subtype": "ACTION",
+						// TO-DO: Set the absolute name of the set_actionselect2
+						// for the table for feature 2
+						"actionId": "<FIX ME>",
+						"actionParams": {"featurevalue2": "0000000000000001"}
+					}  
+				]  
+			},  
+			"selector": {  
+				"criteria": [   
+					{
+						"type": "PROTOCOL_INDEPENDENT",
+						"matches": [ 
+							{
+								//TO-DO: Set the absolute name of the
+								// TCP Source Port header field
+								"field": "<FIX ME>",
+								"match": "range",
+								// TO-DO: Set the values for the range
+								// for feature 2. Remember these values are
+								// expressed in hexadecimal
+								// HINT: Since these values are strings, they
+								// must be enclosed between quotes
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							}
+						]
+					}
+				]  
+			}  
+		},
+		// TO-DO: This is a template to create an entry for the table associated to 
+		// Feature 3. Customize the values for the matching field, and duplicate this
+		// entry as many times as needed in order to create the remaining entries
+		// for your tree.
+		{
+			"priority": 40001,  
+			"timeout": 0,  
+			"isPermanent": true,  
+			"deviceId": "device:s1",
+			"tableId": "MyIngress.feature3_exact",
+			"appId": "co.edu.udea.gita.p4-tutorial",
+			"treatment": {  
+				"instructions": [  
+ 					{  
+						"type": "PROTOCOL_INDEPENDENT",
+						"subtype": "ACTION",
+						"actionId": "MyIngress.set_actionselect3",
+						"actionParams": {"featurevalue3": "0000000000000001"}
+					}  
+				]  
+			},  
+			"selector": {  
+				"criteria": [   
+					{
+						"type": "PROTOCOL_INDEPENDENT",
+						"matches": [ 
+							{
+								// TO-DO; Set the absolute name for the
+								// TCP Destination Port header field
+								"field": "<FIX ME>",
+								"match": "range",
+								// TO-DO: Set the values for the range
+								// for feature 3. Remember these values are
+								// expressed in hexadecimal
+								// HINT: Since these values are strings, they
+								// must be enclosed between quotes
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							}
+						]
+					}
+				]  
+			}  
+		},
+		// TO-DO: This is a template to create an entry for the table associated to 
+		// forwarding table. Customize the values for the matching fields, and duplicate this
+		// entry as many times as needed in order to create the remaining entries
+		// for your tree. There should be an entry for each rule of the decision tree.
+		{
+			"priority": 0,  
+			"timeout": 0,  
+			"isPermanent": true,  
+			"deviceId": "device:s1",
+			"tableId": "MyIngress.ipv4_exact",
+			"appId": "co.edu.udea.gita.p4-tutorial",
+			"treatment": {  
+				"instructions": [  
+					{  
+						"type": "PROTOCOL_INDEPENDENT",
+						"subtype": "ACTION",
+						"actionId": "MyIngress.ipv4_forward",
+						// TO-DO: Customize the action parameters according to the
+						// class matching indicated in the wiki of the exercise.
+						"actionParams": {"dstAddr": "<FIX ME>", "port": "<FIX ME>"}
+					}  
+				]  
+			},  
+			"selector": {  
+				"criteria": [   
+					{
+
+					
+						"type": "PROTOCOL_INDEPENDENT",
+						// TO-DO: Set the values for the selector according to the
+						// configuration of your decision tree.
+						"matches": [ 
+							{
+								"field": "meta.action_select1",
+								"match": "range",
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							},
+							{
+								"field": "meta.action_select2",
+								"match": "range",
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							},
+							{
+								"field": "meta.action_select3",
+								"match": "range",
+								"lowValue": "<FIX ME>",
+								"highValue": "<FIX ME>"
+							}
+						]
+					}
+				]  
+			}
+        }
+     ]  
+   }
+

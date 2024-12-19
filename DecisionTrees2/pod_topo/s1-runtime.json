@@ -1,0 +1,6 @@
+{
+  "target": "bmv2",
+  "p4info": "build/simple_switch.p4.p4info.txt",
+  "bmv2_json": "build/simple_switch.json",
+  "table_entries": [ ]
+}
